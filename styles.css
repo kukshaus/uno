@@ -154,15 +154,17 @@ body.bg-gradient {
 }
 
 .language-flags {
-    display: flex;
-    gap: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.3rem;
+    max-width: 300px;
 }
 
 .language-btn {
-    width: 45px;
-    height: 35px;
+    width: 40px;
+    height: 32px;
     border: 2px solid #e0e0e0;
-    border-radius: 8px;
+    border-radius: 6px;
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -1120,6 +1122,21 @@ body.bg-gradient {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .language-flags {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 240px;
+        gap: 0.25rem;
+    }
+    
+    .language-btn {
+        width: 36px;
+        height: 30px;
+    }
+    
+    .language-btn .flag {
+        font-size: 1rem;
+    }
+    
     .coffee-btn {
         width: 35px;
         height: 35px;
@@ -1282,13 +1299,19 @@ body.bg-gradient {
         font-size: 1.2rem;
     }
     
+    .language-flags {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 200px;
+        gap: 0.2rem;
+    }
+    
     .language-btn {
-        width: 35px;
-        height: 28px;
+        width: 32px;
+        height: 26px;
     }
     
     .language-btn .flag {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     
     .background-options {
