@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNO Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen">
+            <div class="start-container">
+                <div class="top-controls">
+                    <button id="settingsButton" class="settings-btn" title="Einstellungen">
+                        <span class="settings-icon">⚙️</span>
+                    </button>
+                    <div class="language-selector">
+                        <div class="language-flags">
+                            <button class="language-btn active" data-lang="de" title="Deutsch">
+                                <span class="flag">🇩🇪</span>
+                            </button>
+                            <button class="language-btn" data-lang="en" title="English">
+                                <span class="flag">🇬🇧</span>
+                            </button>
+                            <button class="language-btn" data-lang="hu" title="Magyar">
+                                <span class="flag">🇭🇺</span>
+                            </button>
+                            <button class="language-btn" data-lang="ru" title="Русский">
+                                <span class="flag">🇷🇺</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="game-title" data-i18n="game.title">UNO</h1>
+                
+                <div class="player-count-selector">
+                    <h3 data-i18n="start.playerCount">Anzahl Computer-Gegner:</h3>
+                    <div class="player-count-buttons">
+                        <button class="player-count-btn" data-players="2">
+                            <span class="player-count-number">2</span>
+                            <span class="player-count-desc" data-i18n="start.players2">Du + 1 Computer</span>
+                        </button>
+                        <button class="player-count-btn" data-players="3">
+                            <span class="player-count-number">3</span>
+                            <span class="player-count-desc" data-i18n="start.players3">Du + 2 Computer</span>
+                        </button>
+                        <button class="player-count-btn" data-players="4">
+                            <span class="player-count-number">4</span>
+                            <span class="player-count-desc" data-i18n="start.players4">Du + 3 Computer</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="difficulty-selector">
+                    <h3 data-i18n="start.difficulty">Schwierigkeitsgrad wählen:</h3>
+                    <div class="difficulty-buttons">
+                        <button class="difficulty-btn" data-difficulty="easy">
+                            <span class="difficulty-name" data-i18n="difficulty.easy">Einfach</span>
+                            <span class="difficulty-desc" data-i18n="difficulty.easyDesc">Defensiver Computer</span>
+                        </button>
+                        <button class="difficulty-btn" data-difficulty="medium">
+                            <span class="difficulty-name" data-i18n="difficulty.medium">Mittel</span>
+                            <span class="difficulty-desc" data-i18n="difficulty.mediumDesc">Ausgewogener Computer</span>
+                        </button>
+                        <button class="difficulty-btn" data-difficulty="hard">
+                            <span class="difficulty-name" data-i18n="difficulty.hard">Schwer</span>
+                            <span class="difficulty-desc" data-i18n="difficulty.hardDesc">Strategischer Computer</span>
+                        </button>
+                    </div>
+                </div>
+                <button id="rulesButton" class="rules-btn" data-i18n="start.rules">Spielregeln</button>
+                <button id="startGame" class="start-btn" disabled data-i18n="start.startGame">Spiel starten</button>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="screen hidden">
+            <button id="restartButton" class="restart-button" title="Spiel neu starten">
+                <span class="restart-icon">✕</span>
+            </button>
+            
+            <button id="rulesButtonGame" class="rules-button-game" title="Spielregeln anzeigen">
+                <span class="rules-icon">?</span>
+            </button>
+            
+            <div class="players-container" id="playersContainer">
+                <!-- Computer players will be dynamically added here -->
+            </div>
+            
+            <div class="game-center-area">
+                <div class="deck-area">
+                    <div class="draw-pile" id="drawPile">
+                        <!-- Draw pile content will be updated dynamically -->
+                    </div>
+                    <div class="discard-pile" id="discardPile">
+                        <!-- Current card will be displayed here -->
+                    </div>
+                </div>
+                <div class="current-color-indicator" id="currentColorIndicator">
+                    <span class="color-text" data-i18n="game.currentColor">Aktuelle Farbe:</span>
+                    <div class="color-display" id="colorDisplay"></div>
+                </div>
+                <div class="current-turn" id="currentTurn" data-i18n="game.yourTurn">Dein Zug</div>
+            </div>
+
+            <div class="game-actions">
+                <button id="drawCard" class="action-btn" data-i18n="game.drawCard">Karte ziehen</button>
+                <button id="callUno" class="action-btn uno-btn" disabled data-i18n="game.uno">UNO!</button>
+            </div>
+
+            <div class="player-cards" id="playerCards">
+                <!-- Player cards will be displayed here -->
+            </div>
+        </div>
+
+        <!-- Color Selector Modal -->
+        <div id="colorModal" class="modal hidden">
+            <div class="modal-content">
+                <h3 data-i18n="game.chooseColor">Farbe wählen:</h3>
+                <div class="color-options">
+                    <button class="color-btn red" data-color="red"></button>
+                    <button class="color-btn blue" data-color="blue"></button>
+                    <button class="color-btn green" data-color="green"></button>
+                    <button class="color-btn yellow" data-color="yellow"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Over Modal -->
+        <div id="gameOverModal" class="modal hidden">
+            <div class="modal-content">
+                <h2 id="gameResult">Spiel beendet!</h2>
+                <p id="gameResultText"></p>
+                <button id="playAgain" class="start-btn" data-i18n="game.playAgain">Nochmal spielen</button>
+            </div>
+        </div>
+
+        <!-- Rules Modal -->
+        <div id="rulesModal" class="modal hidden">
+            <div class="modal-content rules-modal-content">
+                <div class="modal-header">
+                    <h2>UNO Spielregeln</h2>
+                    <button id="closeRules" class="close-btn">✕</button>
+                </div>
+                <div class="rules-content">
+                    <div class="rules-section">
+                        <h3>🎯 Spielziel</h3>
+                        <p>Sei der erste Spieler, der alle Karten ablegt!</p>
+                    </div>
+
+                    <div class="rules-section">
+                        <h3>🃏 Kartentypen</h3>
+                        <div class="card-types">
+                            <div class="card-type">
+                                <span class="card-example number">5</span>
+                                <div>
+                                    <strong>Zahlenkarten (0-9)</strong>
+                                    <p>Können gespielt werden, wenn Farbe oder Zahl passt</p>
+                                </div>
+                            </div>
+                            <div class="card-type">
+                                <span class="card-example action">STOP</span>
+                                <div>
+                                    <strong>Aussetzen</strong>
+                                    <p>Der nächste Spieler wird übersprungen</p>
+                                </div>
+                            </div>
+                            <div class="card-type">
+                                <span class="card-example action">⟲</span>
+                                <div>
+                                    <strong>Richtungswechsel</strong>
+                                    <p>Ändert die Spielrichtung</p>
+                                </div>
+                            </div>
+                            <div class="card-type">
+                                <span class="card-example action">+2</span>
+                                <div>
+                                    <strong>Zieh-Zwei</strong>
+                                    <p>Nächster Spieler zieht 2 Karten und wird übersprungen</p>
+                                </div>
+                            </div>
+                            <div class="card-type">
+                                <span class="card-example wild">WILD</span>
+                                <div>
+                                    <strong>Farbwahl</strong>
+                                    <p>Du bestimmst die neue Farbe</p>
+                                </div>
+                            </div>
+                            <div class="card-type">
+                                <span class="card-example wild">+4</span>
+                                <div>
+                                    <strong>Zieh-Vier</strong>
+                                    <p>Nächster Spieler zieht 4 Karten, du wählst die Farbe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rules-section">
+                        <h3>🎮 Spielablauf</h3>
+                        <ol>
+                            <li>Jeder Spieler startet mit 7 Karten</li>
+                            <li>Du kannst eine Karte spielen, wenn sie zur aktuellen Farbe oder Zahl passt</li>
+                            <li>Wilde Karten können immer gespielt werden</li>
+                            <li>Wenn du keine passende Karte hast, musst du eine Karte ziehen</li>
+                            <li>Nach dem Ziehen ist der nächste Spieler dran</li>
+                        </ol>
+                    </div>
+
+                    <div class="rules-section">
+                        <h3>🚨 UNO Regel</h3>
+                        <p>Wenn du nur noch <strong>eine Karte</strong> hast, musst du <strong>"UNO!"</strong> rufen!</p>
+                        <p>Vergisst du es, bekommst du 2 Strafkarten.</p>
+                    </div>
+
+                    <div class="rules-section">
+                        <h3>🏆 Gewinnen</h3>
+                        <p>Der erste Spieler, der alle Karten abgelegt hat, gewinnt das Spiel!</p>
+                    </div>
+                </div>
+                <button id="closeRulesBtn" class="start-btn">Verstanden!</button>
+            </div>
+        </div>
+
+        <!-- Settings Modal -->
+        <div id="settingsModal" class="modal hidden">
+            <div class="modal-content settings-modal-content">
+                <div class="modal-header">
+                    <h2 data-i18n="settings.title">Einstellungen</h2>
+                    <button id="closeSettings" class="close-btn">✕</button>
+                </div>
+                <div class="settings-content">
+                    <div class="settings-section">
+                        <h3 data-i18n="settings.background">🎨 Hintergrund</h3>
+                        <div class="background-options">
+                            <div class="background-option active" data-bg="default">
+                                <div class="bg-preview bg-default"></div>
+                                <span data-i18n="settings.bg.default">Standard</span>
+                            </div>
+                            <div class="background-option" data-bg="ocean">
+                                <div class="bg-preview bg-ocean"></div>
+                                <span data-i18n="settings.bg.ocean">Ozean</span>
+                            </div>
+                            <div class="background-option" data-bg="sunset">
+                                <div class="bg-preview bg-sunset"></div>
+                                <span data-i18n="settings.bg.sunset">Sonnenuntergang</span>
+                            </div>
+                            <div class="background-option" data-bg="forest">
+                                <div class="bg-preview bg-forest"></div>
+                                <span data-i18n="settings.bg.forest">Wald</span>
+                            </div>
+                            <div class="background-option" data-bg="space">
+                                <div class="bg-preview bg-space"></div>
+                                <span data-i18n="settings.bg.space">Weltraum</span>
+                            </div>
+                            <div class="background-option" data-bg="gradient">
+                                <div class="bg-preview bg-gradient"></div>
+                                <span data-i18n="settings.bg.gradient">Farbverlauf</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="closeSettingsBtn" class="start-btn" data-i18n="settings.close">Fertig</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
