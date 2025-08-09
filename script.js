@@ -583,7 +583,10 @@ class UnoGame {
         this.rulesBtnGame = document.getElementById('rulesButtonGame');
         
         // Language elements
-        this.languageButtons = document.querySelectorAll('.language-btn');
+        this.languageToggle = document.getElementById('languageToggle');
+        this.languageMenu = document.getElementById('languageMenu');
+        this.languageOptions = document.querySelectorAll('.language-option');
+        this.currentFlag = document.querySelector('.current-flag');
         
         // Settings elements
         this.settingsBtn = document.getElementById('settingsButton');
@@ -663,11 +666,22 @@ class UnoGame {
             this.hideRules();
         });
         
-        // Language selection
-        this.languageButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                this.switchLanguage(btn.dataset.lang);
+        // Language dropdown
+        this.languageToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.toggleLanguageMenu();
+        });
+        
+        this.languageOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                this.switchLanguage(option.dataset.lang);
+                this.hideLanguageMenu();
             });
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', () => {
+            this.hideLanguageMenu();
         });
         
         // Settings
@@ -1460,14 +1474,14 @@ class UnoGame {
     
     // Language System
     initializeLanguage() {
-        this.updateLanguageButtons();
+        this.updateLanguageDisplay();
         this.updateAllTexts();
     }
     
     switchLanguage(lang) {
         this.currentLanguage = lang;
         localStorage.setItem('unoLanguage', lang);
-        this.updateLanguageButtons();
+        this.updateLanguageDisplay();
         this.updateAllTexts();
         
         // Wenn ein Spiel läuft, regeneriere die Computer-Namen in der neuen Sprache
@@ -1497,9 +1511,35 @@ class UnoGame {
         this.updateTurnDisplay();
     }
     
-    updateLanguageButtons() {
-        this.languageButtons.forEach(btn => {
-            btn.classList.toggle('active', btn.dataset.lang === this.currentLanguage);
+    toggleLanguageMenu() {
+        this.languageMenu.classList.toggle('hidden');
+        this.languageToggle.classList.toggle('open');
+    }
+    
+    hideLanguageMenu() {
+        this.languageMenu.classList.add('hidden');
+        this.languageToggle.classList.remove('open');
+    }
+    
+    updateLanguageDisplay() {
+        // Update current flag in toggle button
+        const languageFlags = {
+            'de': '🇩🇪',
+            'en': '🇬🇧', 
+            'es': '🇪🇸',
+            'fr': '🇫🇷',
+            'pt': '🇧🇷',
+            'ja': '🇯🇵',
+            'zh': '🇨🇳',
+            'hu': '🇭🇺',
+            'ru': '🇷🇺'
+        };
+        
+        this.currentFlag.textContent = languageFlags[this.currentLanguage] || '🇩🇪';
+        
+        // Update active state in dropdown
+        this.languageOptions.forEach(option => {
+            option.classList.toggle('active', option.dataset.lang === this.currentLanguage);
         });
     }
     
