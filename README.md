@@ -1,5 +1,9 @@
 # 🎮 UNO Card Game - A Father-Son AI Programming Journey
 
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-☕%20Fuel%20the%20AI%20Teaching%20Revolution!-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/sergejk)
+
+*"Teaching my son that the best debugging happens over coffee... and that AI can't fix everything, but caffeine sure helps! ☕👨‍💻"*
+
 ## 🌟 The Story Behind the Code
 
 This isn't just another card game project. This is the story of how a father used cutting-edge AI technology to teach his son the art of programming, creating something magical together while building real-world development skills.
