@@ -1598,7 +1598,7 @@ body.bg-gradient {
         min-height: auto;
         align-items: center;
         padding: 0.5rem 0;
-        margin-top: 3.5rem;
+        margin-top: 0;
         flex-shrink: 0;
     }
     
@@ -2452,10 +2452,13 @@ body.bg-gradient {
 /* Skill Display Responsive Styles */
 @media (max-width: 768px) {
     .skill-display {
-        top: 0.8rem;
-        left: 4.5rem;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 4rem auto 1rem auto;
         min-width: 250px;
         max-width: 280px;
+        width: calc(100% - 1rem);
     }
     
     #skillTitle {
@@ -2469,10 +2472,13 @@ body.bg-gradient {
 
 @media (max-width: 480px) {
     .skill-display {
-        top: 0.5rem;
-        left: 4rem;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 4rem auto 1rem auto;
         min-width: 220px;
         max-width: 250px;
+        width: calc(100% - 1rem);
     }
     
     #skillTitle {
@@ -2498,9 +2504,13 @@ body.bg-gradient {
 
 @media (max-width: 360px) {
     .skill-display {
-        left: 3.5rem;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 3.5rem auto 1rem auto;
         min-width: 200px;
         max-width: 230px;
+        width: calc(100% - 1rem);
     }
     
     #skillTitle {
