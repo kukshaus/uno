@@ -1,3 +1,6 @@
+// Version
+const APP_VERSION = "1.0.0";
+
 // Translations
 const translations = {
     de: {
@@ -46,6 +49,7 @@ const translations = {
         "settings.bg.space": "Weltraum",
         "settings.bg.gradient": "Farbverlauf",
         "settings.close": "Fertig",
+        "settings.version": "Version {0}",
         "language.auto": "Auto (Browser)"
     },
     en: {
@@ -94,6 +98,7 @@ const translations = {
         "settings.bg.space": "Space",
         "settings.bg.gradient": "Gradient",
         "settings.close": "Done",
+        "settings.version": "Version {0}",
         "language.auto": "Auto (Browser)"
     },
     hu: {
@@ -142,6 +147,7 @@ const translations = {
         "settings.bg.space": "Világűr",
         "settings.bg.gradient": "Színátmenet",
         "settings.close": "Kész",
+        "settings.version": "Verzió {0}",
         "language.auto": "Auto (Böngésző)"
     },
     ru: {
@@ -190,6 +196,7 @@ const translations = {
         "settings.bg.space": "Космос",
         "settings.bg.gradient": "Градиент",
         "settings.close": "Готово",
+        "settings.version": "Версия {0}",
         "language.auto": "Авто (Браузер)"
     },
     es: {
@@ -238,6 +245,7 @@ const translations = {
         "settings.bg.space": "Espacio",
         "settings.bg.gradient": "Gradiente",
         "settings.close": "Listo",
+        "settings.version": "Versión {0}",
         "language.auto": "Auto (Navegador)"
     },
     fr: {
@@ -286,6 +294,7 @@ const translations = {
         "settings.bg.space": "Espace",
         "settings.bg.gradient": "Dégradé",
         "settings.close": "Terminé",
+        "settings.version": "Version {0}",
         "language.auto": "Auto (Navigateur)"
     },
     pt: {
@@ -334,6 +343,7 @@ const translations = {
         "settings.bg.space": "Espaço",
         "settings.bg.gradient": "Gradiente",
         "settings.close": "Pronto",
+        "settings.version": "Versão {0}",
         "language.auto": "Auto (Navegador)"
     },
     ja: {
@@ -382,6 +392,7 @@ const translations = {
         "settings.bg.space": "宇宙",
         "settings.bg.gradient": "グラデーション",
         "settings.close": "完了",
+        "settings.version": "バージョン {0}",
         "language.auto": "自動（ブラウザ）"
     },
     zh: {
@@ -430,6 +441,7 @@ const translations = {
         "settings.bg.space": "太空",
         "settings.bg.gradient": "渐变",
         "settings.close": "完成",
+        "settings.version": "版本 {0}",
         "language.auto": "自动（浏览器）"
     }
 };
@@ -1743,7 +1755,13 @@ class UnoGame {
         // Update all elements with data-i18n attribute
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
-            element.textContent = this.t(key);
+            if (key === 'settings.version') {
+                // Special handling for version text
+                const version = element.getAttribute('data-version') || APP_VERSION;
+                element.textContent = this.t(key, version);
+            } else {
+                element.textContent = this.t(key);
+            }
         });
         
         // Update dynamic texts if game is running
