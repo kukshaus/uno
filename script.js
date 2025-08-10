@@ -50,7 +50,36 @@ const translations = {
         "settings.bg.gradient": "Farbverlauf",
         "settings.close": "Fertig",
         "settings.version": "Version {0}",
-        "language.auto": "Auto (Browser)"
+        "language.auto": "Auto (Browser)",
+        "settings.computerSpeed": "🤖 Computer-Geschwindigkeit",
+        "settings.speed.instant": "Sofort",
+        "settings.speed.fast": "Schnell",
+        "settings.speed.normal": "Normal", 
+        "settings.speed.slow": "Langsam",
+        "skill.title": "🏆 Fertigkeits-Level",
+        "skill.level": "Level {0}",
+        "skill.xp": "EP: {0}/{1}",
+        "skill.stats": "Statistiken",
+        "skill.wins": "Siege:",
+        "skill.losses": "Niederlagen:",
+        "skill.winRate": "Siegquote:",
+        "skill.avgCardsLeft": "Ø Karten übrig:",
+        "skill.avgTurns": "Ø Züge pro Spiel:",
+        "skill.totalGames": "Spiele gesamt:",
+        "skill.levelUp": "Level aufgestiegen! 🎉",
+        "skill.newLevel": "Neues Level: {0}",
+        "skill.reward": "Belohnung freigeschaltet: {0}",
+        "skill.noob": "Anfänger",
+        "skill.beginner": "Einsteiger", 
+        "skill.amateur": "Amateur",
+        "skill.skilled": "Geübt",
+        "skill.expert": "Experte",
+        "skill.master": "Meister",
+        "skill.legend": "Legende",
+        "skill.god": "Gott",
+        "reward.theme": "Neues Theme",
+        "reward.title": "Neuer Titel",
+        "reward.badge": "Neues Abzeichen"
     },
     en: {
         "game.title": "UNO",
@@ -99,7 +128,36 @@ const translations = {
         "settings.bg.gradient": "Gradient",
         "settings.close": "Done",
         "settings.version": "Version {0}",
-        "language.auto": "Auto (Browser)"
+        "language.auto": "Auto (Browser)",
+        "settings.computerSpeed": "🤖 Computer Speed",
+        "settings.speed.instant": "Instant",
+        "settings.speed.fast": "Fast",
+        "settings.speed.normal": "Normal",
+        "settings.speed.slow": "Slow",
+        "skill.title": "🏆 Skill Level",
+        "skill.level": "Level {0}",
+        "skill.xp": "XP: {0}/{1}",
+        "skill.stats": "Statistics",
+        "skill.wins": "Wins:",
+        "skill.losses": "Losses:",
+        "skill.winRate": "Win Rate:",
+        "skill.avgCardsLeft": "Avg Cards Left:",
+        "skill.avgTurns": "Avg Turns per Game:",
+        "skill.totalGames": "Total Games:",
+        "skill.levelUp": "Level Up! 🎉",
+        "skill.newLevel": "New Level: {0}",
+        "skill.reward": "Reward Unlocked: {0}",
+        "skill.noob": "Noob",
+        "skill.beginner": "Beginner",
+        "skill.amateur": "Amateur", 
+        "skill.skilled": "Skilled",
+        "skill.expert": "Expert",
+        "skill.master": "Master",
+        "skill.legend": "Legend",
+        "skill.god": "God",
+        "reward.theme": "New Theme",
+        "reward.title": "New Title",
+        "reward.badge": "New Badge"
     },
     hu: {
         "game.title": "UNO",
@@ -148,7 +206,36 @@ const translations = {
         "settings.bg.gradient": "Színátmenet",
         "settings.close": "Kész",
         "settings.version": "Verzió {0}",
-        "language.auto": "Auto (Böngésző)"
+        "language.auto": "Auto (Böngésző)",
+        "settings.computerSpeed": "🤖 Számítógép Sebesség",
+        "settings.speed.instant": "Azonnali",
+        "settings.speed.fast": "Gyors",
+        "settings.speed.normal": "Normál",
+        "settings.speed.slow": "Lassú",
+        "skill.title": "🏆 Ügyességi Szint",
+        "skill.level": "Szint {0}",
+        "skill.xp": "TP: {0}/{1}",
+        "skill.stats": "Statisztikák",
+        "skill.wins": "Győzelmek:",
+        "skill.losses": "Vereségek:",
+        "skill.winRate": "Győzelmi Arány:",
+        "skill.avgCardsLeft": "Átl. Maradt Kártyák:",
+        "skill.avgTurns": "Átl. Körök/Játék:",
+        "skill.totalGames": "Összes Játék:",
+        "skill.levelUp": "Szintlépés! 🎉",
+        "skill.newLevel": "Új Szint: {0}",
+        "skill.reward": "Jutalom Feloldva: {0}",
+        "skill.noob": "Kezdő",
+        "skill.beginner": "Újoncz",
+        "skill.amateur": "Amatőr",
+        "skill.skilled": "Tapasztalt",
+        "skill.expert": "Szakértő",
+        "skill.master": "Mester",
+        "skill.legend": "Legenda",
+        "skill.god": "Isten",
+        "reward.theme": "Új Téma",
+        "reward.title": "Új Cím",
+        "reward.badge": "Új Jelvény"
     },
     ru: {
         "game.title": "УНО",
@@ -197,7 +284,36 @@ const translations = {
         "settings.bg.gradient": "Градиент",
         "settings.close": "Готово",
         "settings.version": "Версия {0}",
-        "language.auto": "Авто (Браузер)"
+        "language.auto": "Авто (Браузер)",
+        "settings.computerSpeed": "🤖 Скорость Компьютера",
+        "settings.speed.instant": "Мгновенно",
+        "settings.speed.fast": "Быстро",
+        "settings.speed.normal": "Нормально",
+        "settings.speed.slow": "Медленно",
+        "skill.title": "🏆 Уровень Навыка",
+        "skill.level": "Уровень {0}",
+        "skill.xp": "Опыт: {0}/{1}",
+        "skill.stats": "Статистика",
+        "skill.wins": "Победы:",
+        "skill.losses": "Поражения:",
+        "skill.winRate": "Процент Побед:",
+        "skill.avgCardsLeft": "Сред. Карт Осталось:",
+        "skill.avgTurns": "Сред. Ходов за Игру:",
+        "skill.totalGames": "Всего Игр:",
+        "skill.levelUp": "Повышение Уровня! 🎉",
+        "skill.newLevel": "Новый Уровень: {0}",
+        "skill.reward": "Награда Разблокирована: {0}",
+        "skill.noob": "Новичок",
+        "skill.beginner": "Начинающий",
+        "skill.amateur": "Любитель",
+        "skill.skilled": "Умелый",
+        "skill.expert": "Эксперт",
+        "skill.master": "Мастер",
+        "skill.legend": "Легенда",
+        "skill.god": "Бог",
+        "reward.theme": "Новая Тема",
+        "reward.title": "Новый Титул",
+        "reward.badge": "Новый Значок"
     },
     es: {
         "game.title": "UNO",
@@ -246,7 +362,36 @@ const translations = {
         "settings.bg.gradient": "Gradiente",
         "settings.close": "Listo",
         "settings.version": "Versión {0}",
-        "language.auto": "Auto (Navegador)"
+        "language.auto": "Auto (Navegador)",
+        "settings.computerSpeed": "🤖 Velocidad del Ordenador",
+        "settings.speed.instant": "Instantáneo",
+        "settings.speed.fast": "Rápido",
+        "settings.speed.normal": "Normal",
+        "settings.speed.slow": "Lento",
+        "skill.title": "🏆 Nivel de Habilidad",
+        "skill.level": "Nivel {0}",
+        "skill.xp": "EXP: {0}/{1}",
+        "skill.stats": "Estadísticas",
+        "skill.wins": "Victorias:",
+        "skill.losses": "Derrotas:",
+        "skill.winRate": "Tasa de Victoria:",
+        "skill.avgCardsLeft": "Prom. Cartas Restantes:",
+        "skill.avgTurns": "Prom. Turnos por Juego:",
+        "skill.totalGames": "Juegos Totales:",
+        "skill.levelUp": "¡Subiste de Nivel! 🎉",
+        "skill.newLevel": "Nuevo Nivel: {0}",
+        "skill.reward": "Recompensa Desbloqueada: {0}",
+        "skill.noob": "Novato",
+        "skill.beginner": "Principiante",
+        "skill.amateur": "Amateur",
+        "skill.skilled": "Hábil",
+        "skill.expert": "Experto",
+        "skill.master": "Maestro",
+        "skill.legend": "Leyenda",
+        "skill.god": "Dios",
+        "reward.theme": "Nuevo Tema",
+        "reward.title": "Nuevo Título",
+        "reward.badge": "Nueva Insignia"
     },
     fr: {
         "game.title": "UNO",
@@ -295,7 +440,36 @@ const translations = {
         "settings.bg.gradient": "Dégradé",
         "settings.close": "Terminé",
         "settings.version": "Version {0}",
-        "language.auto": "Auto (Navigateur)"
+        "language.auto": "Auto (Navigateur)",
+        "settings.computerSpeed": "🤖 Vitesse de l'Ordinateur",
+        "settings.speed.instant": "Instantané",
+        "settings.speed.fast": "Rapide",
+        "settings.speed.normal": "Normal",
+        "settings.speed.slow": "Lent",
+        "skill.title": "🏆 Niveau de Compétence",
+        "skill.level": "Niveau {0}",
+        "skill.xp": "EXP: {0}/{1}",
+        "skill.stats": "Statistiques",
+        "skill.wins": "Victoires:",
+        "skill.losses": "Défaites:",
+        "skill.winRate": "Taux de Victoire:",
+        "skill.avgCardsLeft": "Moy. Cartes Restantes:",
+        "skill.avgTurns": "Moy. Tours par Partie:",
+        "skill.totalGames": "Parties Totales:",
+        "skill.levelUp": "Montée de Niveau! 🎉",
+        "skill.newLevel": "Nouveau Niveau: {0}",
+        "skill.reward": "Récompense Débloquée: {0}",
+        "skill.noob": "Débutant",
+        "skill.beginner": "Novice",
+        "skill.amateur": "Amateur",
+        "skill.skilled": "Compétent",
+        "skill.expert": "Expert",
+        "skill.master": "Maître",
+        "skill.legend": "Légende",
+        "skill.god": "Dieu",
+        "reward.theme": "Nouveau Thème",
+        "reward.title": "Nouveau Titre",
+        "reward.badge": "Nouveau Badge"
     },
     pt: {
         "game.title": "UNO",
@@ -344,7 +518,36 @@ const translations = {
         "settings.bg.gradient": "Gradiente",
         "settings.close": "Pronto",
         "settings.version": "Versão {0}",
-        "language.auto": "Auto (Navegador)"
+        "language.auto": "Auto (Navegador)",
+        "settings.computerSpeed": "🤖 Velocidade do Computador",
+        "settings.speed.instant": "Instantâneo",
+        "settings.speed.fast": "Rápido",
+        "settings.speed.normal": "Normal",
+        "settings.speed.slow": "Lento",
+        "skill.title": "🏆 Nível de Habilidade",
+        "skill.level": "Nível {0}",
+        "skill.xp": "EXP: {0}/{1}",
+        "skill.stats": "Estatísticas",
+        "skill.wins": "Vitórias:",
+        "skill.losses": "Derrotas:",
+        "skill.winRate": "Taxa de Vitória:",
+        "skill.avgCardsLeft": "Méd. Cartas Restantes:",
+        "skill.avgTurns": "Méd. Turnos por Jogo:",
+        "skill.totalGames": "Jogos Totais:",
+        "skill.levelUp": "Subiu de Nível! 🎉",
+        "skill.newLevel": "Novo Nível: {0}",
+        "skill.reward": "Recompensa Desbloqueada: {0}",
+        "skill.noob": "Novato",
+        "skill.beginner": "Iniciante",
+        "skill.amateur": "Amador",
+        "skill.skilled": "Habilidoso",
+        "skill.expert": "Especialista",
+        "skill.master": "Mestre",
+        "skill.legend": "Lenda",
+        "skill.god": "Deus",
+        "reward.theme": "Novo Tema",
+        "reward.title": "Novo Título",
+        "reward.badge": "Novo Distintivo"
     },
     ja: {
         "game.title": "UNO",
@@ -393,7 +596,36 @@ const translations = {
         "settings.bg.gradient": "グラデーション",
         "settings.close": "完了",
         "settings.version": "バージョン {0}",
-        "language.auto": "自動（ブラウザ）"
+        "language.auto": "自動（ブラウザ）",
+        "settings.computerSpeed": "🤖 コンピューター速度",
+        "settings.speed.instant": "即座",
+        "settings.speed.fast": "速い",
+        "settings.speed.normal": "普通",
+        "settings.speed.slow": "遅い",
+        "skill.title": "🏆 スキルレベル",
+        "skill.level": "レベル {0}",
+        "skill.xp": "経験値: {0}/{1}",
+        "skill.stats": "統計",
+        "skill.wins": "勝利:",
+        "skill.losses": "敗北:",
+        "skill.winRate": "勝率:",
+        "skill.avgCardsLeft": "平均残りカード:",
+        "skill.avgTurns": "平均ターン/ゲーム:",
+        "skill.totalGames": "総ゲーム数:",
+        "skill.levelUp": "レベルアップ! 🎉",
+        "skill.newLevel": "新レベル: {0}",
+        "skill.reward": "報酬解除: {0}",
+        "skill.noob": "初心者",
+        "skill.beginner": "ビギナー",
+        "skill.amateur": "アマチュア",
+        "skill.skilled": "熟練者",
+        "skill.expert": "エキスパート",
+        "skill.master": "マスター",
+        "skill.legend": "レジェンド",
+        "skill.god": "神",
+        "reward.theme": "新テーマ",
+        "reward.title": "新タイトル",
+        "reward.badge": "新バッジ"
     },
     zh: {
         "game.title": "UNO",
@@ -442,7 +674,36 @@ const translations = {
         "settings.bg.gradient": "渐变",
         "settings.close": "完成",
         "settings.version": "版本 {0}",
-        "language.auto": "自动（浏览器）"
+        "language.auto": "自动（浏览器）",
+        "settings.computerSpeed": "🤖 电脑速度",
+        "settings.speed.instant": "瞬间",
+        "settings.speed.fast": "快速",
+        "settings.speed.normal": "正常",
+        "settings.speed.slow": "慢速",
+        "skill.title": "🏆 技能等级",
+        "skill.level": "等级 {0}",
+        "skill.xp": "经验值: {0}/{1}",
+        "skill.stats": "统计",
+        "skill.wins": "胜利:",
+        "skill.losses": "失败:",
+        "skill.winRate": "胜率:",
+        "skill.avgCardsLeft": "平均剩余牌数:",
+        "skill.avgTurns": "平均回合数/游戏:",
+        "skill.totalGames": "总游戏数:",
+        "skill.levelUp": "升级! 🎉",
+        "skill.newLevel": "新等级: {0}",
+        "skill.reward": "奖励解锁: {0}",
+        "skill.noob": "菜鸟",
+        "skill.beginner": "初学者",
+        "skill.amateur": "业余",
+        "skill.skilled": "熟练",
+        "skill.expert": "专家",
+        "skill.master": "大师",
+        "skill.legend": "传奇",
+        "skill.god": "神",
+        "reward.theme": "新主题",
+        "reward.title": "新称号",
+        "reward.badge": "新徽章"
     }
 };
 
@@ -563,11 +824,20 @@ class UnoGame {
         this.gameInProgress = false; // Prevent multiple simultaneous actions
         this.currentLanguage = localStorage.getItem('unoLanguage') || this.detectBrowserLanguage();
         this.currentBackground = localStorage.getItem('unoBackground') || 'default';
+        this.computerSpeed = localStorage.getItem('unoComputerSpeed') || 'normal';
+        
+        // Skill Analysis System
+        this.playerStats = this.loadPlayerStats();
+        this.currentGameStats = this.initializeGameStats();
         
         this.initializeElements();
         this.setupEventListeners();
         this.initializeLanguage();
         this.initializeBackground();
+        this.initializeComputerSpeed();
+        
+        // Initialize skill display
+        this.updateSkillDisplay();
     }
     
     initializeElements() {
@@ -613,6 +883,19 @@ class UnoGame {
         this.settingsBtn = document.getElementById('settingsButton');
         this.settingsBtnGame = document.getElementById('settingsButtonGame');
         this.backgroundOptions = document.querySelectorAll('.background-option');
+        this.speedOptions = document.querySelectorAll('.speed-option');
+        
+        // Skill display elements
+        this.skillDisplay = document.getElementById('skillDisplay');
+        this.skillToggle = document.getElementById('skillToggle');
+        this.skillContent = document.getElementById('skillContent');
+        this.skillLevelText = document.getElementById('skillLevelText');
+        this.skillLevelName = document.getElementById('skillLevelName');
+        this.skillXP = document.getElementById('skillXP');
+        this.xpProgress = document.getElementById('xpProgress');
+        this.skillWins = document.getElementById('skillWins');
+        this.skillLosses = document.getElementById('skillLosses');
+        this.skillWinRate = document.getElementById('skillWinRate');
     }
     
     setupEventListeners() {
@@ -735,11 +1018,29 @@ class UnoGame {
             });
         });
         
+        // Computer speed selection
+        this.speedOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                this.changeComputerSpeed(option.dataset.speed);
+            });
+        });
+        
         // Draw pile click
         this.drawPileElement.addEventListener('click', () => {
             if (this.currentPlayerIndex === 0 && this.deck.length > 0) {
                 this.drawCard(0);
             }
+        });
+        
+        // Skill display toggle
+        this.skillToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.toggleSkillDisplay();
+        });
+        
+        // Skill header click to toggle
+        document.querySelector('.skill-header').addEventListener('click', () => {
+            this.toggleSkillDisplay();
         });
     }
     
@@ -837,6 +1138,9 @@ class UnoGame {
         this.startScreen.classList.add('hidden');
         this.gameScreen.classList.remove('hidden');
         
+        // Reset game stats for new game
+        this.currentGameStats = this.initializeGameStats();
+        
         this.createDeck();
         this.dealInitialCards();
         this.setupPlayersUI();
@@ -847,6 +1151,9 @@ class UnoGame {
         
         // Enable UNO button when human player has 2 cards
         this.updateUnoButton();
+        
+        // Update skill display
+        this.updateSkillDisplay();
     }
     
     setupPlayersUI() {
@@ -1073,6 +1380,14 @@ class UnoGame {
         const hand = this.players[playerIndex];
         const card = hand[cardIndex];
         
+        // Track player stats
+        if (playerIndex === 0) {
+            this.currentGameStats.playerTurns++;
+            if (card.type === 'action' || card.type === 'wild') {
+                this.currentGameStats.specialCardsPlayed++;
+            }
+        }
+        
         if (!this.canPlayCard(card)) {
             return false;
         }
@@ -1186,6 +1501,11 @@ class UnoGame {
             this.reshuffleDeck();
         }
         
+        // Track player stats
+        if (playerIndex === 0) {
+            this.currentGameStats.cardsDrawn++;
+        }
+        
         // Check if we still have no cards after reshuffling (shouldn't happen normally)
         if (this.deck.length === 0) {
             console.warn('No cards available to draw!');
@@ -1247,11 +1567,12 @@ class UnoGame {
         
         if (this.currentPlayerIndex > 0) {
             // Computer's turn
+            const delay = this.getComputerTurnDelay();
             setTimeout(() => {
                 if (this.gameInProgress && this.currentPlayerIndex > 0) {
                     this.computerPlay();
                 }
-            }, 1500); // Delay for realism
+            }, delay);
         }
     }
     
@@ -1441,6 +1762,11 @@ class UnoGame {
     callUno(playerIndex) {
         this.calledUno[playerIndex] = true;
         
+        // Track UNO call for player
+        if (playerIndex === 0) {
+            this.currentGameStats.unoCalledCorrectly = true;
+        }
+        
         if (playerIndex === 0) {
             this.callUnoBtn.disabled = true;
             
@@ -1464,6 +1790,11 @@ class UnoGame {
     penalizePlayer(playerIndex) {
         // Draw 2 penalty cards for not calling UNO
         this.drawCards(playerIndex, 2);
+        
+        // Track UNO forgotten for player
+        if (playerIndex === 0) {
+            this.currentGameStats.unoForgotten = true;
+        }
         
         if (playerIndex === 0) {
             this.currentTurnElement.textContent = 'UNO vergessen! +2 Karten';
@@ -1492,7 +1823,488 @@ class UnoGame {
             gameResultText.textContent = this.t('game.lostText', computerName);
         }
         
+        // Analyze game for skill system
+        this.analyzeGamePerformance(winnerIndex);
+        
         this.gameOverModal.classList.remove('hidden');
+    }
+
+    // ===== SKILL ANALYSIS SYSTEM =====
+    
+    loadPlayerStats() {
+        const defaultStats = {
+            level: 1,
+            xp: 0,
+            totalGames: 0,
+            wins: 0,
+            losses: 0,
+            totalCardsLeft: 0,
+            totalTurns: 0,
+            bestWinStreak: 0,
+            currentWinStreak: 0,
+            unoCallsSuccessful: 0,
+            unoCallsMissed: 0,
+            gamesWonByDifficulty: { easy: 0, medium: 0, hard: 0 },
+            achievements: [],
+            unlockedRewards: []
+        };
+        
+        const savedStats = localStorage.getItem('unoPlayerStats');
+        if (savedStats) {
+            try {
+                return { ...defaultStats, ...JSON.parse(savedStats) };
+            } catch (e) {
+                console.warn('Failed to load player stats, using defaults');
+                return defaultStats;
+            }
+        }
+        return defaultStats;
+    }
+
+    savePlayerStats() {
+        localStorage.setItem('unoPlayerStats', JSON.stringify(this.playerStats));
+    }
+
+    initializeGameStats() {
+        return {
+            startTime: Date.now(),
+            playerTurns: 0,
+            cardsDrawn: 0,
+            unoCalledCorrectly: false,
+            unoForgotten: false,
+            specialCardsPlayed: 0,
+            difficulty: this.difficulty,
+            opponents: this.playerCount - 1
+        };
+    }
+
+    analyzeGamePerformance(winnerIndex) {
+        // Finalize current game stats
+        this.currentGameStats.endTime = Date.now();
+        this.currentGameStats.duration = this.currentGameStats.endTime - this.currentGameStats.startTime;
+        this.currentGameStats.cardsLeftInHand = this.players[0].length; // Human player's cards
+        
+        const isWin = winnerIndex === 0;
+        
+        // Update basic stats
+        this.playerStats.totalGames++;
+        if (isWin) {
+            this.playerStats.wins++;
+            this.playerStats.currentWinStreak++;
+            this.playerStats.gamesWonByDifficulty[this.difficulty]++;
+            if (this.playerStats.currentWinStreak > this.playerStats.bestWinStreak) {
+                this.playerStats.bestWinStreak = this.playerStats.currentWinStreak;
+            }
+        } else {
+            this.playerStats.losses++;
+            this.playerStats.currentWinStreak = 0;
+        }
+        
+        // Update cumulative stats
+        this.playerStats.totalCardsLeft += this.currentGameStats.cardsLeftInHand;
+        this.playerStats.totalTurns += this.currentGameStats.playerTurns;
+        
+        // UNO call tracking
+        if (this.currentGameStats.unoCalledCorrectly) {
+            this.playerStats.unoCallsSuccessful++;
+        }
+        if (this.currentGameStats.unoForgotten) {
+            this.playerStats.unoCallsMissed++;
+        }
+        
+        // Calculate XP gained
+        const xpGained = this.calculateXPGain(isWin);
+        const oldLevel = this.playerStats.level;
+        this.playerStats.xp += xpGained;
+        
+        // Check for level up
+        const newLevel = this.calculateLevel(this.playerStats.xp);
+        if (newLevel > oldLevel) {
+            this.playerStats.level = newLevel;
+            this.handleLevelUp(oldLevel, newLevel);
+        }
+        
+        // Check for achievements
+        this.checkAchievements();
+        
+        // Save updated stats
+        this.savePlayerStats();
+        
+        // Update UI
+        this.updateSkillDisplay();
+    }
+
+    calculateXPGain(isWin) {
+        let baseXP = isWin ? 100 : 25;
+        
+        // Bonus for difficulty
+        const difficultyMultiplier = { easy: 1.0, medium: 1.5, hard: 2.0 };
+        baseXP *= difficultyMultiplier[this.difficulty];
+        
+        // Bonus for fewer cards left
+        if (isWin) {
+            const cardsLeftBonus = Math.max(0, 10 - this.currentGameStats.cardsLeftInHand) * 5;
+            baseXP += cardsLeftBonus;
+        }
+        
+        // Bonus for UNO call
+        if (this.currentGameStats.unoCalledCorrectly) {
+            baseXP += 20;
+        }
+        
+        // Penalty for UNO forgotten
+        if (this.currentGameStats.unoForgotten) {
+            baseXP -= 10;
+        }
+        
+        // Bonus for winning streak
+        if (isWin && this.playerStats.currentWinStreak >= 3) {
+            baseXP += Math.min(50, this.playerStats.currentWinStreak * 5);
+        }
+        
+        return Math.max(10, Math.floor(baseXP)); // Minimum 10 XP
+    }
+
+    calculateLevel(xp) {
+        // Progressive XP requirements: Level n requires (n-1) * 500 + 1000 XP
+        let level = 1;
+        let totalXPRequired = 0;
+        
+        while (true) {
+            const xpForNextLevel = level * 500 + 500; // Level 1->2: 1000, 2->3: 1500, etc.
+            if (xp < totalXPRequired + xpForNextLevel) {
+                break;
+            }
+            totalXPRequired += xpForNextLevel;
+            level++;
+        }
+        
+        return level;
+    }
+
+    getXPForCurrentLevel() {
+        const currentLevel = this.playerStats.level;
+        let totalXPForPreviousLevels = 0;
+        
+        for (let i = 1; i < currentLevel; i++) {
+            totalXPForPreviousLevels += i * 500 + 500;
+        }
+        
+        return this.playerStats.xp - totalXPForPreviousLevels;
+    }
+
+    getXPRequiredForNextLevel() {
+        return this.playerStats.level * 500 + 500;
+    }
+
+    getSkillLevelName(level) {
+        if (level >= 25) return this.t('skill.god');
+        if (level >= 20) return this.t('skill.legend');
+        if (level >= 15) return this.t('skill.master');
+        if (level >= 12) return this.t('skill.expert');
+        if (level >= 8) return this.t('skill.skilled');
+        if (level >= 5) return this.t('skill.amateur');
+        if (level >= 3) return this.t('skill.beginner');
+        return this.t('skill.noob');
+    }
+
+    handleLevelUp(oldLevel, newLevel) {
+        // Show level up notification
+        setTimeout(() => {
+            this.showLevelUpNotification(oldLevel, newLevel);
+        }, 2000); // Show after game over modal
+        
+        // Check for rewards at new level
+        const reward = this.getRewardForLevel(newLevel);
+        if (reward && !this.playerStats.unlockedRewards.includes(reward.id)) {
+            this.playerStats.unlockedRewards.push(reward.id);
+            setTimeout(() => {
+                this.showRewardNotification(reward);
+            }, 4000);
+        }
+    }
+
+    getRewardForLevel(level) {
+        const rewards = {
+            3: { id: 'theme_sunset_unlock', type: 'theme', name: 'Sunset Theme' },
+            5: { id: 'title_amateur', type: 'title', name: 'Amateur' },
+            8: { id: 'theme_forest_unlock', type: 'theme', name: 'Forest Theme' },
+            10: { id: 'title_skilled', type: 'title', name: 'Skilled Player' },
+            12: { id: 'theme_space_unlock', type: 'theme', name: 'Space Theme' },
+            15: { id: 'title_master', type: 'title', name: 'UNO Master' },
+            20: { id: 'theme_legendary', type: 'theme', name: 'Legendary Theme' },
+            25: { id: 'title_god', type: 'title', name: 'UNO God' }
+        };
+        
+        return rewards[level] || null;
+    }
+
+    checkAchievements() {
+        const achievements = [];
+        
+        // Win streak achievements
+        if (this.playerStats.currentWinStreak >= 5 && !this.playerStats.achievements.includes('win_streak_5')) {
+            achievements.push({ id: 'win_streak_5', name: 'Win Streak Master', description: 'Win 5 games in a row' });
+        }
+        
+        // Game count achievements
+        if (this.playerStats.totalGames >= 10 && !this.playerStats.achievements.includes('games_10')) {
+            achievements.push({ id: 'games_10', name: 'Dedicated Player', description: 'Play 10 games' });
+        }
+        
+        if (this.playerStats.totalGames >= 50 && !this.playerStats.achievements.includes('games_50')) {
+            achievements.push({ id: 'games_50', name: 'UNO Enthusiast', description: 'Play 50 games' });
+        }
+        
+        // Difficulty achievements
+        if (this.playerStats.gamesWonByDifficulty.hard >= 5 && !this.playerStats.achievements.includes('hard_winner')) {
+            achievements.push({ id: 'hard_winner', name: 'Hard Mode Conqueror', description: 'Win 5 games on hard difficulty' });
+        }
+        
+        // UNO call achievements
+        if (this.playerStats.unoCallsSuccessful >= 10 && !this.playerStats.achievements.includes('uno_master')) {
+            achievements.push({ id: 'uno_master', name: 'UNO Call Master', description: 'Successfully call UNO 10 times' });
+        }
+        
+        // Add new achievements
+        achievements.forEach(achievement => {
+            if (!this.playerStats.achievements.includes(achievement.id)) {
+                this.playerStats.achievements.push(achievement.id);
+                setTimeout(() => {
+                    this.showAchievementNotification(achievement);
+                }, Math.random() * 3000 + 5000);
+            }
+        });
+    }
+
+    showLevelUpNotification(oldLevel, newLevel) {
+        const notification = document.createElement('div');
+        notification.className = 'skill-notification level-up';
+        notification.style.cssText = `
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(135deg, #4caf50, #45a049);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            z-index: 10001;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            min-width: 300px;
+            animation: levelUpAnimation 0.5s ease-out;
+        `;
+        
+        const levelName = this.getSkillLevelName(newLevel);
+        notification.innerHTML = `
+            <div style="font-size: 24px; margin-bottom: 10px;">🎉</div>
+            <div style="font-size: 18px; font-weight: bold; margin-bottom: 5px;">${this.t('skill.levelUp')}</div>
+            <div style="font-size: 16px; margin-bottom: 10px;">${this.t('skill.newLevel', newLevel)}</div>
+            <div style="font-size: 14px; opacity: 0.9;">${levelName}</div>
+        `;
+        
+        // Add animation keyframes if not already added
+        if (!document.querySelector('#levelUpKeyframes')) {
+            const style = document.createElement('style');
+            style.id = 'levelUpKeyframes';
+            style.textContent = `
+                @keyframes levelUpAnimation {
+                    0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; }
+                    50% { transform: translate(-50%, -50%) scale(1.1); }
+                    100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+                }
+            `;
+            document.head.appendChild(style);
+        }
+        
+        document.body.appendChild(notification);
+        
+        setTimeout(() => {
+            notification.style.opacity = '0';
+            notification.style.transform = 'translate(-50%, -50%) scale(0.8)';
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.parentNode.removeChild(notification);
+                }
+            }, 300);
+        }, 3000);
+    }
+
+    showRewardNotification(reward) {
+        const notification = document.createElement('div');
+        notification.className = 'skill-notification reward';
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #ff9800, #f57c00);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 10000;
+            font-family: 'Poppins', sans-serif;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+            max-width: 300px;
+        `;
+        
+        notification.innerHTML = `
+            <div style="font-size: 16px; font-weight: bold; margin-bottom: 5px;">🏆 ${this.t('skill.reward', reward.name)}</div>
+            <div style="font-size: 14px; opacity: 0.9;">${this.t(`reward.${reward.type}`)}</div>
+        `;
+        
+        document.body.appendChild(notification);
+        
+        setTimeout(() => {
+            notification.style.transform = 'translateX(0)';
+        }, 100);
+        
+        setTimeout(() => {
+            notification.style.transform = 'translateX(100%)';
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.parentNode.removeChild(notification);
+                }
+            }, 300);
+        }, 4000);
+    }
+
+    showAchievementNotification(achievement) {
+        const notification = document.createElement('div');
+        notification.className = 'skill-notification achievement';
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 10000;
+            font-family: 'Poppins', sans-serif;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+            max-width: 300px;
+        `;
+        
+        notification.innerHTML = `
+            <div style="font-size: 16px; font-weight: bold; margin-bottom: 5px;">🏅 ${achievement.name}</div>
+            <div style="font-size: 14px; opacity: 0.9;">${achievement.description}</div>
+        `;
+        
+        document.body.appendChild(notification);
+        
+        setTimeout(() => {
+            notification.style.transform = 'translateX(0)';
+        }, 100);
+        
+        setTimeout(() => {
+            notification.style.transform = 'translateX(-100%)';
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.parentNode.removeChild(notification);
+                }
+            }, 300);
+        }, 5000);
+    }
+
+    toggleSkillDisplay() {
+        const isCollapsed = this.skillContent.classList.toggle('collapsed');
+        this.skillToggle.classList.toggle('collapsed', isCollapsed);
+        this.skillToggle.textContent = isCollapsed ? '▶' : '▼';
+    }
+
+    updateSkillDisplay() {
+        if (!this.skillDisplay) return;
+        
+        const stats = this.playerStats;
+        const level = stats.level;
+        const levelName = this.getSkillLevelName(level);
+        const winRate = stats.totalGames > 0 ? Math.round((stats.wins / stats.totalGames) * 100) : 0;
+        
+        // Update level display
+        this.skillLevelText.textContent = this.t('skill.level', level);
+        this.skillLevelName.textContent = levelName;
+        
+        // Update XP display
+        const currentXP = this.getXPForCurrentLevel();
+        const requiredXP = this.getXPRequiredForNextLevel();
+        const xpProgress = (currentXP / requiredXP) * 100;
+        
+        this.skillXP.textContent = this.t('skill.xp', currentXP, requiredXP);
+        this.xpProgress.style.width = `${Math.min(xpProgress, 100)}%`;
+        
+        // Update stats
+        this.skillWins.textContent = stats.wins;
+        this.skillLosses.textContent = stats.losses;
+        this.skillWinRate.textContent = `${winRate}%`;
+        
+        // Update skill level name color based on level
+        this.updateSkillLevelColor(level);
+    }
+
+    updateSkillLevelColor(level) {
+        const colors = {
+            1: '#9e9e9e',    // Noob - gray
+            3: '#8bc34a',    // Beginner - light green
+            5: '#4caf50',    // Amateur - green
+            8: '#2196f3',    // Skilled - blue
+            12: '#9c27b0',   // Expert - purple
+            15: '#ff9800',   // Master - orange
+            20: '#ff5722',   // Legend - red
+            25: '#ffd700'    // God - gold
+        };
+        
+        let color = '#9e9e9e'; // default
+        for (let levelThreshold of Object.keys(colors).reverse()) {
+            if (level >= parseInt(levelThreshold)) {
+                color = colors[levelThreshold];
+                break;
+            }
+        }
+        
+        this.skillLevelName.style.background = color;
+        this.skillLevelName.style.color = level >= 20 ? '#000' : '#fff';
+    }
+
+    // ===== COMPUTER SPEED SETTINGS =====
+    
+    getComputerTurnDelay() {
+        const speedDelays = {
+            'instant': 100,    // Almost instant (just enough for visual feedback)
+            'fast': 800,       // Fast
+            'normal': 1500,    // Normal (original speed)
+            'slow': 3000       // Slow for beginners
+        };
+        return speedDelays[this.computerSpeed] || speedDelays['normal'];
+    }
+
+    changeComputerSpeed(speed) {
+        // Update active speed option in UI
+        this.speedOptions.forEach(option => {
+            option.classList.remove('active');
+            if (option.dataset.speed === speed) {
+                option.classList.add('active');
+            }
+        });
+
+        // Save the setting
+        this.computerSpeed = speed;
+        localStorage.setItem('unoComputerSpeed', speed);
+    }
+
+    initializeComputerSpeed() {
+        // Set the active speed option based on saved setting
+        this.speedOptions.forEach(option => {
+            option.classList.remove('active');
+            if (option.dataset.speed === this.computerSpeed) {
+                option.classList.add('active');
+            }
+        });
     }
     
     showRules() {
@@ -1571,6 +2383,9 @@ class UnoGame {
         if (this.gameInProgress && this.computerPlayerNames) {
             this.regenerateComputerNames();
         }
+        
+        // Update skill display with new language
+        this.updateSkillDisplay();
         
         // Zeige eine Benachrichtigung, dass die Sprache geändert wurde
         this.showLanguageChangeNotification(lang);

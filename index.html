@@ -136,6 +136,40 @@
                 <span class="settings-game-icon">⚙️</span>
             </button>
             
+            <!-- Skill Level Display -->
+            <div id="skillDisplay" class="skill-display">
+                <div class="skill-header">
+                    <span id="skillTitle" data-i18n="skill.title">🏆 Fertigkeits-Level</span>
+                    <button id="skillToggle" class="skill-toggle">▼</button>
+                </div>
+                <div id="skillContent" class="skill-content">
+                    <div class="skill-level">
+                        <span id="skillLevelText" data-i18n="skill.level">Level 1</span>
+                        <span id="skillLevelName" class="skill-level-name">Anfänger</span>
+                    </div>
+                    <div class="skill-xp">
+                        <div class="xp-bar">
+                            <div id="xpProgress" class="xp-progress"></div>
+                        </div>
+                        <span id="skillXP" data-i18n="skill.xp">EP: 0/1000</span>
+                    </div>
+                    <div class="skill-stats">
+                        <div class="stat-row">
+                            <span data-i18n="skill.wins">Siege:</span>
+                            <span id="skillWins">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span data-i18n="skill.losses">Niederlagen:</span>
+                            <span id="skillLosses">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span data-i18n="skill.winRate">Siegquote:</span>
+                            <span id="skillWinRate">0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="players-container" id="playersContainer">
                 <!-- Computer players will be dynamically added here -->
             </div>
@@ -313,6 +347,27 @@
                         </div>
                     </div>
                     
+                    <div class="settings-section">
+                        <h3 data-i18n="settings.computerSpeed">🤖 Computer-Geschwindigkeit</h3>
+                        <div class="speed-options">
+                            <div class="speed-option" data-speed="instant">
+                                <div class="speed-preview">⚡</div>
+                                <span data-i18n="settings.speed.instant">Sofort</span>
+                            </div>
+                            <div class="speed-option" data-speed="fast">
+                                <div class="speed-preview">🏃</div>
+                                <span data-i18n="settings.speed.fast">Schnell</span>
+                            </div>
+                            <div class="speed-option active" data-speed="normal">
+                                <div class="speed-preview">🚶</div>
+                                <span data-i18n="settings.speed.normal">Normal</span>
+                            </div>
+                            <div class="speed-option" data-speed="slow">
+                                <div class="speed-preview">🐌</div>
+                                <span data-i18n="settings.speed.slow">Langsam</span>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
                 <div class="version-info">
