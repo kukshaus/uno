@@ -89,7 +89,20 @@ body.bg-gradient {
 .top-controls {
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.left-controls {
+    display: flex;
+    align-items: center;
+}
+
+.right-controls {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -1366,7 +1379,10 @@ body.bg-gradient {
     
     .top-controls {
         top: 0.5rem;
-        right: 0.5rem;
+        padding: 0 0.5rem;
+    }
+    
+    .right-controls {
         gap: 0.5rem;
     }
     
