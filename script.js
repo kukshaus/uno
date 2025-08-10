@@ -39,12 +39,19 @@ const translations = {
         "colors.yellow": "Gelb",
         "settings.title": "Einstellungen",
         "settings.background": "🎨 Hintergrund",
+        "settings.cardTheme": "🎮 Karten-Theme",
         "settings.bg.default": "Standard",
         "settings.bg.ocean": "Ozean",
         "settings.bg.sunset": "Sonnenuntergang",
         "settings.bg.forest": "Wald",
         "settings.bg.space": "Weltraum",
         "settings.bg.gradient": "Farbverlauf",
+        "settings.theme.classic": "Klassisch",
+        "settings.theme.minecraft": "Minecraft",
+        "settings.theme.mario": "Mario",
+        "settings.theme.pokemon": "Pokemon",
+        "settings.theme.cyberpunk": "Cyberpunk",
+        "settings.theme.retro": "Retro",
         "settings.close": "Fertig"
     },
     en: {
@@ -86,12 +93,19 @@ const translations = {
         "colors.yellow": "Yellow",
         "settings.title": "Settings",
         "settings.background": "🎨 Background",
+        "settings.cardTheme": "🎮 Card Theme",
         "settings.bg.default": "Default",
         "settings.bg.ocean": "Ocean",
         "settings.bg.sunset": "Sunset",
         "settings.bg.forest": "Forest",
         "settings.bg.space": "Space",
         "settings.bg.gradient": "Gradient",
+        "settings.theme.classic": "Classic",
+        "settings.theme.minecraft": "Minecraft",
+        "settings.theme.mario": "Mario",
+        "settings.theme.pokemon": "Pokemon",
+        "settings.theme.cyberpunk": "Cyberpunk",
+        "settings.theme.retro": "Retro",
         "settings.close": "Done"
     },
     hu: {
@@ -133,12 +147,19 @@ const translations = {
         "colors.yellow": "Sárga",
         "settings.title": "Beállítások",
         "settings.background": "🎨 Háttér",
+        "settings.cardTheme": "🎮 Kártya Téma",
         "settings.bg.default": "Alapértelmezett",
         "settings.bg.ocean": "Óceán",
         "settings.bg.sunset": "Naplemente",
         "settings.bg.forest": "Erdő",
         "settings.bg.space": "Világűr",
         "settings.bg.gradient": "Színátmenet",
+        "settings.theme.classic": "Klasszikus",
+        "settings.theme.minecraft": "Minecraft",
+        "settings.theme.mario": "Mario",
+        "settings.theme.pokemon": "Pokemon",
+        "settings.theme.cyberpunk": "Cyberpunk",
+        "settings.theme.retro": "Retro",
         "settings.close": "Kész"
     },
     ru: {
@@ -180,12 +201,19 @@ const translations = {
         "colors.yellow": "Жёлтый",
         "settings.title": "Настройки",
         "settings.background": "🎨 Фон",
+        "settings.cardTheme": "🎮 Тема карт",
         "settings.bg.default": "По умолчанию",
         "settings.bg.ocean": "Океан",
         "settings.bg.sunset": "Закат",
         "settings.bg.forest": "Лес",
         "settings.bg.space": "Космос",
         "settings.bg.gradient": "Градиент",
+        "settings.theme.classic": "Классическая",
+        "settings.theme.minecraft": "Майнкрафт",
+        "settings.theme.mario": "Марио",
+        "settings.theme.pokemon": "Покемон",
+        "settings.theme.cyberpunk": "Киберпанк",
+        "settings.theme.retro": "Ретро",
         "settings.close": "Готово"
     },
     es: {
@@ -227,12 +255,19 @@ const translations = {
         "colors.yellow": "Amarillo",
         "settings.title": "Configuración",
         "settings.background": "🎨 Fondo",
+        "settings.cardTheme": "🎮 Tema de Cartas",
         "settings.bg.default": "Por defecto",
         "settings.bg.ocean": "Océano",
         "settings.bg.sunset": "Atardecer",
         "settings.bg.forest": "Bosque",
         "settings.bg.space": "Espacio",
         "settings.bg.gradient": "Gradiente",
+        "settings.theme.classic": "Clásico",
+        "settings.theme.minecraft": "Minecraft",
+        "settings.theme.mario": "Mario",
+        "settings.theme.pokemon": "Pokemon",
+        "settings.theme.cyberpunk": "Cyberpunk",
+        "settings.theme.retro": "Retro",
         "settings.close": "Listo"
     },
     fr: {
@@ -274,12 +309,19 @@ const translations = {
         "colors.yellow": "Jaune",
         "settings.title": "Paramètres",
         "settings.background": "🎨 Arrière-plan",
+        "settings.cardTheme": "🎮 Thème de Cartes",
         "settings.bg.default": "Par défaut",
         "settings.bg.ocean": "Océan",
         "settings.bg.sunset": "Coucher de soleil",
         "settings.bg.forest": "Forêt",
         "settings.bg.space": "Espace",
         "settings.bg.gradient": "Dégradé",
+        "settings.theme.classic": "Classique",
+        "settings.theme.minecraft": "Minecraft",
+        "settings.theme.mario": "Mario",
+        "settings.theme.pokemon": "Pokemon",
+        "settings.theme.cyberpunk": "Cyberpunk",
+        "settings.theme.retro": "Retro",
         "settings.close": "Terminé"
     },
     pt: {
@@ -321,12 +363,19 @@ const translations = {
         "colors.yellow": "Amarelo",
         "settings.title": "Configurações",
         "settings.background": "🎨 Fundo",
+        "settings.cardTheme": "🎮 Tema de Cartas",
         "settings.bg.default": "Padrão",
         "settings.bg.ocean": "Oceano",
         "settings.bg.sunset": "Pôr do sol",
         "settings.bg.forest": "Floresta",
         "settings.bg.space": "Espaço",
         "settings.bg.gradient": "Gradiente",
+        "settings.theme.classic": "Clássico",
+        "settings.theme.minecraft": "Minecraft",
+        "settings.theme.mario": "Mario",
+        "settings.theme.pokemon": "Pokemon",
+        "settings.theme.cyberpunk": "Cyberpunk",
+        "settings.theme.retro": "Retro",
         "settings.close": "Pronto"
     },
     ja: {
@@ -368,12 +417,19 @@ const translations = {
         "colors.yellow": "黄",
         "settings.title": "設定",
         "settings.background": "🎨 背景",
+        "settings.cardTheme": "🎮 カードテーマ",
         "settings.bg.default": "デフォルト",
         "settings.bg.ocean": "海",
         "settings.bg.sunset": "夕日",
         "settings.bg.forest": "森",
         "settings.bg.space": "宇宙",
         "settings.bg.gradient": "グラデーション",
+        "settings.theme.classic": "クラシック",
+        "settings.theme.minecraft": "マインクラフト",
+        "settings.theme.mario": "マリオ",
+        "settings.theme.pokemon": "ポケモン",
+        "settings.theme.cyberpunk": "サイバーパンク",
+        "settings.theme.retro": "レトロ",
         "settings.close": "完了"
     },
     zh: {
@@ -542,11 +598,13 @@ class UnoGame {
         this.gameInProgress = false; // Prevent multiple simultaneous actions
         this.currentLanguage = localStorage.getItem('unoLanguage') || 'de';
         this.currentBackground = localStorage.getItem('unoBackground') || 'default';
+        this.currentCardTheme = localStorage.getItem('unoCardTheme') || 'classic';
         
         this.initializeElements();
         this.setupEventListeners();
         this.initializeLanguage();
         this.initializeBackground();
+        this.initializeCardTheme();
         
         // Zeige eine Benachrichtigung über die automatisch erkannte Sprache beim ersten Laden
         this.showLanguageDetectionNotification();
@@ -595,6 +653,7 @@ class UnoGame {
         this.settingsBtn = document.getElementById('settingsButton');
         this.settingsBtnGame = document.getElementById('settingsButtonGame');
         this.backgroundOptions = document.querySelectorAll('.background-option');
+        this.cardThemeOptions = document.querySelectorAll('.card-theme-option');
     }
     
     setupEventListeners() {
@@ -709,6 +768,13 @@ class UnoGame {
         this.backgroundOptions.forEach(option => {
             option.addEventListener('click', () => {
                 this.changeBackground(option.dataset.bg);
+            });
+        });
+        
+        // Card theme selection
+        this.cardThemeOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                this.changeCardTheme(option.dataset.theme);
             });
         });
         
@@ -918,7 +984,8 @@ class UnoGame {
                 computerCardsContainer.innerHTML = '';
                 this.players[i].forEach(() => {
                     const cardElement = document.createElement('div');
-                    cardElement.className = 'computer-card';
+                    cardElement.className = `computer-card ${this.currentCardTheme}-theme`;
+                    cardElement.innerHTML = this.createCardBackContent();
                     computerCardsContainer.appendChild(cardElement);
                 });
             }
@@ -938,7 +1005,8 @@ class UnoGame {
         if (this.deck.length > 0) {
             // Show card back when cards are available
             const cardBack = document.createElement('div');
-            cardBack.className = 'card-back';
+            cardBack.className = `card-back ${this.currentCardTheme}-theme`;
+            cardBack.innerHTML = this.createCardBackContent();
             this.drawPileElement.appendChild(cardBack);
             
             // Enable draw button
@@ -1015,7 +1083,7 @@ class UnoGame {
     
     createCardElement(card, showFace = true) {
         const cardElement = document.createElement('div');
-        cardElement.className = `card ${card.color}`;
+        cardElement.className = `card ${card.color} ${this.currentCardTheme}-theme`;
         
         if (showFace) {
             if (card.type === 'number') {
@@ -1031,9 +1099,30 @@ class UnoGame {
                 const wildText = card.value === 'wild' ? 'WILD' : '+4';
                 cardElement.innerHTML = `<span class="card-value">${wildText}</span>`;
             }
+        } else {
+            // Rückseite der Karte mit Theme-spezifischem Design
+            cardElement.innerHTML = this.createCardBackContent();
         }
         
         return cardElement;
+    }
+    
+    createCardBackContent() {
+        switch (this.currentCardTheme) {
+            case 'minecraft':
+                return '<div class="card-back-minecraft"><span class="pickaxe">⛏️</span></div>';
+            case 'mario':
+                return '<div class="card-back-mario"><span class="mushroom">🍄</span></div>';
+            case 'pokemon':
+                return '<div class="card-back-pokemon"><span class="pokeball">⚫</span></div>';
+            case 'cyberpunk':
+                return '<div class="card-back-cyberpunk"><span class="skull">💀</span></div>';
+            case 'retro':
+                return '<div class="card-back-retro"><span class="alien">👾</span></div>';
+            case 'classic':
+            default:
+                return '<div class="card-back-classic"><span class="uno-text">UNO</span></div>';
+        }
     }
     
     canPlayCard(card) {
@@ -1279,7 +1368,7 @@ class UnoGame {
         if (regularCards.length > 0 && Math.random() < 0.7) {
             return regularCards[Math.floor(Math.random() * regularCards.length)];
         } else if (actionCards.length > 0 && Math.random() < 0.6) {
-            return actionCards[Math.floor(Math.random() * actionCards.length)];
+            return actionCards[Math.floor(Math.random() * regularCards.length)];
         } else if (wildCards.length > 0) {
             return wildCards[Math.floor(Math.random() * wildCards.length)];
         }
@@ -1739,6 +1828,41 @@ class UnoGame {
     updateBackgroundOptions() {
         this.backgroundOptions.forEach(option => {
             option.classList.toggle('active', option.dataset.bg === this.currentBackground);
+        });
+    }
+    
+    initializeCardTheme() {
+        this.applyCardTheme(this.currentCardTheme);
+        this.updateCardThemeOptions();
+    }
+    
+    changeCardTheme(themeName) {
+        this.currentCardTheme = themeName;
+        localStorage.setItem('unoCardTheme', themeName);
+        this.applyCardTheme(themeName);
+        this.updateCardThemeOptions();
+    }
+    
+    applyCardTheme(themeName) {
+        // Remove all existing theme classes from cards
+        const allCards = document.querySelectorAll('.card, .computer-card, .card-back');
+        allCards.forEach(card => {
+            card.classList.remove('classic-theme', 'minecraft-theme', 'mario-theme', 'pokemon-theme', 'cyberpunk-theme', 'retro-theme');
+            card.classList.add(themeName + '-theme');
+            
+            // Update card back content if it's a back side
+            if (card.classList.contains('computer-card') || card.classList.contains('card-back')) {
+                card.innerHTML = this.createCardBackContent();
+            }
+        });
+        
+        // Store current theme for new cards
+        document.body.setAttribute('data-card-theme', themeName);
+    }
+    
+    updateCardThemeOptions() {
+        this.cardThemeOptions.forEach(option => {
+            option.classList.toggle('active', option.dataset.theme === this.currentCardTheme);
         });
     }
 }

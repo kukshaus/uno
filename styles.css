@@ -879,7 +879,7 @@ body.bg-gradient {
     border-color: #66bb6a;
 }
 
-/* Card Colors */
+/* Card Colors - Base styles for card faces */
 .card.red { background: linear-gradient(135deg, #f44336, #d32f2f); }
 .card.blue { background: linear-gradient(135deg, #2196f3, #1976d2); }
 .card.green { background: linear-gradient(135deg, #4caf50, #388e3c); }
@@ -892,6 +892,216 @@ body.bg-gradient {
 .card.wild-draw-four {
     background: linear-gradient(45deg, #f44336 25%, #2196f3 25% 50%, #4caf50 50% 75%, #ffeb3b 75%);
     border-color: #333;
+}
+
+/* Card Back - Apply themes to card backs */
+.card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    border: 2px solid #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Classic Theme (Original) - Applied to card backs */
+.classic-theme .card-back { 
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    border-color: #ecf0f1;
+}
+
+/* Minecraft Theme - Applied to card backs */
+.minecraft-theme .card-back { 
+    background: linear-gradient(135deg, #8B4513, #654321);
+    border: 2px solid #A0522D;
+    box-shadow: inset 2px 2px 4px rgba(139, 69, 19, 0.3);
+}
+
+/* Mario Theme - Applied to card backs */
+.mario-theme .card-back { 
+    background: linear-gradient(135deg, #FF6B6B, #FF4757);
+    border: 3px solid #FFFFFF;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Pokemon Theme - Applied to card backs */
+.pokemon-theme .card-back { 
+    background: linear-gradient(45deg, #FF6B6B 25%, #FFE66D 25% 50%, #FF6B6B 50% 75%, #FFE66D 75%);
+    border: 2px solid #FFD93D;
+    box-shadow: 0 0 15px rgba(255, 107, 107, 0.5);
+}
+
+/* Cyberpunk Theme - Applied to card backs */
+.cyberpunk-theme .card-back { 
+    background: linear-gradient(135deg, #FF073A, #FF0040);
+    border: 2px solid #00FFFF;
+    box-shadow: 0 0 20px rgba(255, 7, 58, 0.6), inset 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+/* Retro Theme - Applied to card backs */
+.retro-theme .card-back { 
+    background: linear-gradient(135deg, #FF6B9D, #C44569);
+    border: 3px solid #FFF;
+    box-shadow: 4px 4px 0px #8B008B;
+}
+
+/* Computer cards should also use the theme */
+.computer-card {
+    width: 60px;
+    height: 84px;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-left: -15px;
+    transition: transform 0.3s ease;
+}
+
+/* Apply themes to computer cards */
+.classic-theme .computer-card { 
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+.minecraft-theme .computer-card { 
+    background: linear-gradient(135deg, #8B4513, #654321);
+    border-color: #A0522D;
+}
+
+.mario-theme .computer-card { 
+    background: linear-gradient(135deg, #FF6B6B, #FF4757);
+    border-color: #FFFFFF;
+}
+
+.pokemon-theme .computer-card { 
+    background: linear-gradient(45deg, #FF6B6B 25%, #FFE66D 25% 50%, #FF6B6B 50% 75%, #FFE66D 75%);
+    border-color: #FFD93D;
+}
+
+.cyberpunk-theme .computer-card { 
+    background: linear-gradient(135deg, #FF073A, #FF0040);
+    border-color: #00FFFF;
+}
+
+.retro-theme .computer-card { 
+    background: linear-gradient(135deg, #FF6B9D, #C44569);
+    border-color: #FFF;
+}
+
+/* Theme-specific card back content styles */
+.card-back-classic .uno-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ecf0f1;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-back-minecraft .pickaxe {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.card-back-minecraft .uno-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: #ecf0f1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-back-mario .mushroom {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.card-back-mario .uno-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: #ecf0f1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-back-pokemon .pokeball {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.card-back-pokemon .uno-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: #ecf0f1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-back-cyberpunk .skull {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.card-back-cyberpunk .uno-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: #ecf0f1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-back-retro .alien {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.card-back-retro .uno-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: #ecf0f1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .card-value {
@@ -2112,4 +2322,185 @@ body.bg-gradient {
     .settings-game-icon {
         font-size: 1.3rem;
     }
+}
+
+/* Card Theme Options Styles */
+.card-theme-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card-theme-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.card-theme-option:hover {
+    border-color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-theme-option.active {
+    border-color: #667eea;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+.theme-preview {
+    margin-bottom: 0.5rem;
+}
+
+.preview-card {
+    width: 50px;
+    height: 70px;
+    border-radius: 6px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-theme-option span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Classic Theme (Original) */
+.classic-theme.red { background: linear-gradient(135deg, #f44336, #d32f2f); }
+.classic-theme.blue { background: linear-gradient(135deg, #2196f3, #1976d2); }
+.classic-theme.green { background: linear-gradient(135deg, #4caf50, #388e3c); }
+.classic-theme.yellow { background: linear-gradient(135deg, #ffeb3b, #f57f17); color: #333; }
+
+/* Minecraft Theme */
+.minecraft-theme.red { 
+    background: linear-gradient(135deg, #8B4513, #654321);
+    border: 2px solid #A0522D;
+    box-shadow: inset 2px 2px 4px rgba(139, 69, 19, 0.3), 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.minecraft-theme.blue { 
+    background: linear-gradient(135deg, #1E90FF, #0066CC);
+    border: 2px solid #4169E1;
+    box-shadow: inset 2px 2px 4px rgba(30, 144, 255, 0.3), 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.minecraft-theme.green { 
+    background: linear-gradient(135deg, #228B22, #006400);
+    border: 2px solid #32CD32;
+    box-shadow: inset 2px 2px 4px rgba(34, 139, 34, 0.3), 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.minecraft-theme.yellow { 
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    border: 2px solid #FFFF00;
+    color: #8B4513;
+    box-shadow: inset 2px 2px 4px rgba(255, 215, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Mario Theme */
+.mario-theme.red { 
+    background: linear-gradient(135deg, #FF6B6B, #FF4757);
+    border: 3px solid #FFFFFF;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3), 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+.mario-theme.blue { 
+    background: linear-gradient(135deg, #74B9FF, #0984E3);
+    border: 3px solid #FFFFFF;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3), 0 4px 15px rgba(116, 185, 255, 0.4);
+}
+.mario-theme.green { 
+    background: linear-gradient(135deg, #00B894, #00A085);
+    border: 3px solid #FFFFFF;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3), 0 4px 15px rgba(0, 184, 148, 0.4);
+}
+.mario-theme.yellow { 
+    background: linear-gradient(135deg, #FDCB6E, #E17055);
+    border: 3px solid #FFFFFF;
+    color: #2d3436;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3), 0 4px 15px rgba(253, 203, 110, 0.4);
+}
+
+/* Pokemon Theme */
+.pokemon-theme.red { 
+    background: linear-gradient(45deg, #FF6B6B 25%, #FFE66D 25% 50%, #FF6B6B 50% 75%, #FFE66D 75%);
+    border: 2px solid #FFD93D;
+    box-shadow: 0 0 15px rgba(255, 107, 107, 0.5);
+}
+.pokemon-theme.blue { 
+    background: linear-gradient(45deg, #4ECDC4 25%, #45B7D1 25% 50%, #4ECDC4 50% 75%, #45B7D1 75%);
+    border: 2px solid #96CEB4;
+    box-shadow: 0 0 15px rgba(78, 205, 196, 0.5);
+}
+.pokemon-theme.green { 
+    background: linear-gradient(45deg, #95E1D3 25%, #A8E6CF 25% 50%, #95E1D3 50% 75%, #A8E6CF 75%);
+    border: 2px solid #88D8C0;
+    color: #2d3436;
+    box-shadow: 0 0 15px rgba(149, 225, 211, 0.5);
+}
+.pokemon-theme.yellow { 
+    background: linear-gradient(45deg, #FFE66D 25%, #FFD93D 25% 50%, #FFE66D 50% 75%, #FFD93D 75%);
+    border: 2px solid #FFB74D;
+    color: #8B4513;
+    box-shadow: 0 0 15px rgba(255, 230, 109, 0.5);
+}
+
+/* Cyberpunk Theme */
+.cyberpunk-theme.red { 
+    background: linear-gradient(135deg, #FF073A, #FF0040);
+    border: 2px solid #00FFFF;
+    box-shadow: 0 0 20px rgba(255, 7, 58, 0.6), inset 0 0 10px rgba(0, 255, 255, 0.2);
+}
+.cyberpunk-theme.blue { 
+    background: linear-gradient(135deg, #00D4FF, #0099CC);
+    border: 2px solid #FF073A;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.6), inset 0 0 10px rgba(255, 7, 58, 0.2);
+}
+.cyberpunk-theme.green { 
+    background: linear-gradient(135deg, #39FF14, #00CC00);
+    border: 2px solid #FF073A;
+    color: #000;
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.6), inset 0 0 10px rgba(255, 7, 58, 0.2);
+}
+.cyberpunk-theme.yellow { 
+    background: linear-gradient(135deg, #FFFF00, #FFD700);
+    border: 2px solid #00FFFF;
+    color: #000;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.6), inset 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+/* Retro Theme */
+.retro-theme.red { 
+    background: linear-gradient(135deg, #FF6B9D, #C44569);
+    border: 3px solid #FFF;
+    box-shadow: 4px 4px 0px #8B008B, 0 8px 15px rgba(255, 107, 157, 0.3);
+}
+.retro-theme.blue { 
+    background: linear-gradient(135deg, #3742FA, #2F3542);
+    border: 3px solid #FFF;
+    box-shadow: 4px 4px 0px #191970, 0 8px 15px rgba(55, 66, 250, 0.3);
+}
+.retro-theme.green { 
+    background: linear-gradient(135deg, #7BED9F, #5F27CD);
+    border: 3px solid #FFF;
+    color: #2d3436;
+    box-shadow: 4px 4px 0px #4B0082, 0 8px 15px rgba(123, 237, 159, 0.3);
+}
+.retro-theme.yellow { 
+    background: linear-gradient(135deg, #FFD93D, #6C5CE7);
+    border: 3px solid #FFF;
+    color: #2d3436;
+    box-shadow: 4px 4px 0px #4B0082, 0 8px 15px rgba(255, 217, 61, 0.3);
 }
