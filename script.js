@@ -547,6 +547,9 @@ class UnoGame {
         this.setupEventListeners();
         this.initializeLanguage();
         this.initializeBackground();
+        
+        // Zeige eine Benachrichtigung über die automatisch erkannte Sprache beim ersten Laden
+        this.showLanguageDetectionNotification();
     }
     
     initializeElements() {
@@ -590,6 +593,7 @@ class UnoGame {
         
         // Settings elements
         this.settingsBtn = document.getElementById('settingsButton');
+        this.settingsBtnGame = document.getElementById('settingsButtonGame');
         this.backgroundOptions = document.querySelectorAll('.background-option');
     }
     
@@ -686,6 +690,10 @@ class UnoGame {
         
         // Settings
         this.settingsBtn.addEventListener('click', () => {
+            this.showSettings();
+        });
+        
+        this.settingsBtnGame.addEventListener('click', () => {
             this.showSettings();
         });
         
@@ -1474,8 +1482,143 @@ class UnoGame {
     
     // Language System
     initializeLanguage() {
+        // Automatische Spracherkennung basierend auf Browsersprache
+        if (!localStorage.getItem('unoLanguage')) {
+            const detectedLanguage = this.detectBrowserLanguage();
+            this.currentLanguage = detectedLanguage;
+            localStorage.setItem('unoLanguage', detectedLanguage);
+        }
+        
         this.updateLanguageDisplay();
         this.updateAllTexts();
+    }
+    
+    detectBrowserLanguage() {
+        // Browsersprache abrufen
+        const browserLang = navigator.language || navigator.userLanguage || 'de';
+        const primaryLang = browserLang.split('-')[0].toLowerCase();
+        
+        // Verfügbare Sprachen im Spiel
+        const availableLanguages = ['de', 'en', 'es', 'fr', 'pt', 'ja', 'zh', 'hu', 'ru'];
+        
+        // Direkte Übereinstimmung finden
+        if (availableLanguages.includes(primaryLang)) {
+            return primaryLang;
+        }
+        
+        // Sprachzuordnung für ähnliche Sprachen
+        const languageMapping = {
+            'en-us': 'en', 'en-gb': 'en', 'en-ca': 'en', 'en-au': 'en',
+            'es-mx': 'es', 'es-ar': 'es', 'es-cl': 'es', 'es-co': 'es',
+            'fr-ca': 'fr', 'fr-be': 'fr', 'fr-ch': 'fr', 'fr-lu': 'fr',
+            'pt-pt': 'pt', 'pt-ao': 'pt', 'pt-mo': 'pt',
+            'ja-jp': 'ja',
+            'zh-cn': 'zh', 'zh-tw': 'zh', 'zh-hk': 'zh', 'zh-sg': 'zh',
+            'hu-hu': 'hu',
+            'ru-ru': 'ru', 'ru-ua': 'ru', 'ru-kz': 'ru', 'ru-by': 'ru'
+        };
+        
+        // Vollständige Sprachcode-Übereinstimmung
+        if (languageMapping[browserLang.toLowerCase()]) {
+            return languageMapping[browserLang.toLowerCase()];
+        }
+        
+        // Fallback auf Deutsch
+        return 'de';
+    }
+    
+    showLanguageDetectionNotification() {
+        // Zeige nur beim ersten Laden eine Benachrichtigung über die erkannte Sprache
+        if (!localStorage.getItem('unoLanguageNotificationShown')) {
+            const languageNames = {
+                'de': 'Deutsch',
+                'en': 'English',
+                'es': 'Español',
+                'fr': 'Français',
+                'pt': 'Português',
+                'ja': '日本語',
+                'zh': '中文',
+                'hu': 'Magyar',
+                'ru': 'Русский'
+            };
+            
+            const detectedLangName = languageNames[this.currentLanguage] || 'Deutsch';
+            
+            // Erstelle eine temporäre Benachrichtigung
+            const notification = document.createElement('div');
+            notification.className = 'language-notification';
+            notification.innerHTML = `
+                <span>🌍 Sprache automatisch erkannt: ${detectedLangName}</span>
+                <button class="notification-close">✕</button>
+            `;
+            
+            // Styling für die Benachrichtigung
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: rgba(0, 0, 0, 0.8);
+                color: white;
+                padding: 12px 16px;
+                border-radius: 8px;
+                font-size: 14px;
+                z-index: 10000;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+                animation: slideIn 0.3s ease-out;
+            `;
+            
+            // Schließen-Button Styling
+            const closeBtn = notification.querySelector('.notification-close');
+            closeBtn.style.cssText = `
+                background: none;
+                border: none;
+                color: white;
+                cursor: pointer;
+                font-size: 16px;
+                padding: 0;
+                margin: 0;
+            `;
+            
+            // Event Listener für den Schließen-Button
+            closeBtn.addEventListener('click', () => {
+                notification.remove();
+            });
+            
+            // Füge CSS-Animation hinzu
+            if (!document.querySelector('#language-notification-styles')) {
+                const style = document.createElement('style');
+                style.id = 'language-notification-styles';
+                style.textContent = `
+                    @keyframes slideIn {
+                        from {
+                            transform: translateX(100%);
+                            opacity: 0;
+                        }
+                        to {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+            
+            // Füge die Benachrichtigung zum DOM hinzu
+            document.body.appendChild(notification);
+            
+            // Automatisch nach 5 Sekunden ausblenden
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.remove();
+                }
+            }, 5000);
+            
+            // Markiere als angezeigt
+            localStorage.setItem('unoLanguageNotificationShown', 'true');
+        }
     }
     
     switchLanguage(lang) {

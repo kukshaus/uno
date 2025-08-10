@@ -2036,3 +2036,80 @@ body.bg-gradient {
         margin-left: 0;
     }
 }
+
+.settings-button-game {
+    position: absolute;
+    top: 1rem;
+    right: 8rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #9c27b0, #673ab7);
+    border: 3px solid white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(156, 39, 176, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-button-game:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(156, 39, 176, 0.5);
+    background: linear-gradient(135deg, #8e24aa, #5e35b1);
+}
+
+.settings-button-game:active {
+    transform: scale(0.95);
+}
+
+.settings-game-icon {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    user-select: none;
+}
+
+
+/* Settings Button Game Responsive Styles */
+@media (max-width: 768px) {
+    .settings-button-game {
+        width: 45px;
+        height: 45px;
+        top: 0.8rem;
+        right: 7.5rem;
+    }
+    
+    .settings-game-icon {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .settings-button-game {
+        width: 40px;
+        height: 40px;
+        top: 0.5rem;
+        right: 7rem;
+    }
+    
+    .settings-game-icon {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .settings-button-game {
+        width: 38px;
+        height: 38px;
+        top: 0.3rem;
+        right: 6.5rem;
+    }
+    
+    .settings-game-icon {
+        font-size: 1.3rem;
+    }
+}
