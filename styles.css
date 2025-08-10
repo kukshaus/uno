@@ -389,41 +389,64 @@ body.bg-gradient {
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
     border: none;
-    padding: 1rem 2rem;
-    border-radius: 50px;
+    padding: 1rem 2.5rem;
     font-size: 1.1rem;
     font-weight: 600;
+    border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-    min-height: 48px;
-    touch-action: manipulation;
-    -webkit-touch-callout: none;
-    user-select: none;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    margin-top: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .start-btn:hover:not(:disabled) {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
 }
 
 .start-btn:disabled {
-    opacity: 0.5;
+    opacity: 0.6;
     cursor: not-allowed;
+    transform: none;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
 }
 
 .rules-btn {
-    background: rgba(255, 255, 255, 0.9);
-    color: #333;
-    border: 2px solid #e0e0e0;
-    padding: 0.8rem 1.5rem;
-    border-radius: 25px;
+    background: linear-gradient(135deg, #4caf50, #45a049);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
     font-size: 1rem;
     font-weight: 600;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-bottom: 1rem;
-    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.rules-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+}
+
+/* Tablet-specific button adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .start-btn {
+        padding: 1.2rem 3rem;
+        font-size: 1.2rem;
+        margin-top: 1.8rem;
+    }
+    
+    .rules-btn {
+        padding: 1rem 2.5rem;
+        font-size: 1.1rem;
+        margin-top: 1.2rem;
+    }
 }
 
 .rules-btn:hover {
@@ -431,6 +454,10 @@ body.bg-gradient {
     border-color: #667eea;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.rules-btn:active {
+    transform: scale(0.95);
 }
 
 /* Game Screen Styles */
@@ -1127,32 +1154,50 @@ body.bg-gradient {
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    transition: opacity 0.3s ease;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .modal.hidden {
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
 }
 
 .modal-content {
     background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    max-width: 400px;
-    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.2);
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: hidden;
+    position: relative;
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 .modal-content h2 {
     color: #333;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
 }
 
 .modal-content h3 {
     color: #555;
-    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 
 .color-options {
@@ -1194,36 +1239,61 @@ body.bg-gradient {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid #e0e0e0;
+    padding: 1.5rem 2rem 1rem 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    background: linear-gradient(135deg, #f8f9ff, #e6eaff);
+    border-radius: 20px 20px 0 0;
 }
 
 .modal-header h2 {
-    margin: 0;
     color: #333;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 600;
 }
 
 .close-btn {
-    background: #f44336;
-    color: white;
+    width: 40px;
+    height: 40px;
     border: none;
-    width: 35px;
-    height: 35px;
+    background: #f0f0f0;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.2rem;
+    color: #666;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .close-btn:hover {
-    background: #d32f2f;
+    background: #e0e0e0;
+    color: #333;
     transform: scale(1.1);
+}
+
+.close-btn:active {
+    transform: scale(0.95);
+}
+
+/* Tablet-specific close button adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .close-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+    
+    .modal-header {
+        padding: 1.2rem 1.5rem 0.8rem 1.5rem;
+    }
+    
+    .modal-header h2 {
+        font-size: 1.6rem;
+    }
 }
 
 .rules-content {
@@ -1322,10 +1392,17 @@ body.bg-gradient {
 .settings-modal-content {
     max-width: 500px;
     width: 95%;
+    max-height: 90vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .settings-content {
     text-align: left;
+    overflow-y: auto;
+    flex: 1;
+    padding-right: 0.5rem;
 }
 
 .settings-section {
@@ -2504,3 +2581,176 @@ body.bg-gradient {
     color: #2d3436;
     box-shadow: 4px 4px 0px #4B0082, 0 8px 15px rgba(255, 217, 61, 0.3);
 }
+
+/* Tablet-specific responsive design */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .settings-modal-content {
+        max-width: 90vw;
+        max-height: 85vh;
+    }
+    
+    .background-options {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+    }
+    
+    .card-theme-options {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+    }
+    
+    .background-option {
+        padding: 1.2rem;
+    }
+    
+    .card-theme-option {
+        padding: 1.2rem 0.8rem;
+    }
+    
+    .bg-preview {
+        width: 90px;
+        height: 55px;
+    }
+    
+    .preview-card {
+        width: 55px;
+        height: 75px;
+        font-size: 0.9rem;
+    }
+    
+    .background-option span,
+    .card-theme-option span {
+        font-size: 1rem;
+    }
+}
+
+/* Landscape orientation for tablets */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .settings-modal-content {
+        max-height: 80vh;
+    }
+    
+    .background-options {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .card-theme-options {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .settings-section {
+        margin-bottom: 1.2rem;
+    }
+    
+    .settings-section h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+/* Settings close button styling */
+#closeSettingsBtn {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+#closeSettingsBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+#closeSettingsBtn:active {
+    transform: translateY(0);
+}
+
+/* Tablet-specific button adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #closeSettingsBtn {
+        padding: 1.2rem 2rem;
+        font-size: 1.2rem;
+        margin-top: 1.2rem;
+    }
+}
+
+/* Touch-friendly improvements for tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Improve touch targets */
+    .background-option,
+    .card-theme-option {
+        min-height: 120px;
+        touch-action: manipulation;
+        -webkit-touch-callout: none;
+        user-select: none;
+    }
+    
+    /* Better spacing for touch */
+    .settings-section {
+        margin-bottom: 2rem;
+    }
+    
+    /* Improve modal positioning */
+    .modal {
+        padding: 0.5rem;
+    }
+    
+    .modal-content {
+        max-height: 95vh;
+        border-radius: 16px;
+    }
+    
+    /* Better grid layouts for tablet */
+    .background-options {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .card-theme-options {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+/* Landscape tablet optimizations */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .settings-modal-content {
+        max-height: 75vh;
+    }
+    
+    .background-options {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+    
+    .card-theme-options {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+    
+    .settings-section {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* High-DPI tablet support */
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .bg-preview,
+    .preview-card {
+        border-width: 1px;
+    }
+    
+    .background-option,
+    .card-theme-option {
+        border-width: 1px;
+    }
+}
+
