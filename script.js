@@ -1,478 +1,438 @@
 // Translations
 const translations = {
     de: {
-        game: {
-            title: "UNO",
-            currentColor: "Aktuelle Farbe:",
-            yourTurn: "Dein Zug",
-            drawCard: "Karte ziehen",
-            uno: "UNO!",
-            chooseColor: "Farbe wählen:",
-            playAgain: "Nochmal spielen"
-        },
-        start: {
-            playerCount: "Anzahl Computer-Gegner:",
-            players2: "Du + 1 Computer",
-            players3: "Du + 2 Computer",
-            players4: "Du + 3 Computer",
-            difficulty: "Schwierigkeitsgrad wählen:",
-            rules: "Spielregeln",
-            startGame: "Spiel starten"
-        },
-        difficulty: {
-            easy: "Einfach",
-            easyDesc: "Defensiver Computer",
-            medium: "Mittel",
-            mediumDesc: "Ausgewogener Computer",
-            hard: "Schwer",
-            hardDesc: "Strategischer Computer"
-        },
-        settings: {
-            title: "Einstellungen",
-            background: "🎨 Hintergrund",
-            cardTheme: "🎮 Karten-Theme",
-            bg: {
-                default: "Standard",
-                ocean: "Ozean",
-                sunset: "Sonnenuntergang",
-                forest: "Wald",
-                space: "Weltraum",
-                gradient: "Farbverlauf"
-            },
-            theme: {
-                classic: "Klassisch",
-                minecraft: "Minecraft",
-                mario: "Mario",
-                pokemon: "Pokemon",
-                cyberpunk: "Cyberpunk",
-                retro: "Retro"
-            },
-            close: "Fertig",
-            version: "Version 1.0.0"
-        }
+        "game.title": "UNO",
+        "start.playerCount": "Anzahl Computer-Gegner:",
+        "start.players2": "Du + 1 Computer",
+        "start.players3": "Du + 2 Computer", 
+        "start.players4": "Du + 3 Computer",
+        "start.difficulty": "Schwierigkeitsgrad wählen:",
+        "difficulty.easy": "Einfach",
+        "difficulty.easyDesc": "Defensiver Computer",
+        "difficulty.medium": "Mittel",
+        "difficulty.mediumDesc": "Ausgewogener Computer",
+        "difficulty.hard": "Schwer",
+        "difficulty.hardDesc": "Strategischer Computer",
+        "start.rules": "Spielregeln",
+        "start.startGame": "Spiel starten",
+        "game.yourTurn": "Dein Zug",
+        "game.computerTurn": "Computer {0} ist dran",
+        "game.drawCard": "Karte ziehen",
+        "game.uno": "UNO!",
+        "game.currentColor": "Aktuelle Farbe:",
+        "game.cards": "Karten",
+        "game.chooseColor": "Farbe wählen:",
+        "game.computerChooses": "Computer wählt: {0}",
+        "game.unoCalled": "UNO gerufen!",
+        "game.computerCallsUno": "Computer {0} ruft UNO!",
+        "game.unoForgotten": "UNO vergessen! +2 Karten",
+        "game.won": "Gewonnen! 🎉",
+        "game.lost": "Verloren 😔", 
+        "game.wonText": "Herzlichen Glückwunsch! Du hast das Spiel gewonnen!",
+        "game.lostText": "Computer {0} hat gewonnen. Versuch es nochmal!",
+        "game.playAgain": "Nochmal spielen",
+        "game.restart": "Möchtest du das Spiel wirklich neu starten?",
+        "game.empty": "Leer",
+        "colors.red": "Rot",
+        "colors.blue": "Blau", 
+        "colors.green": "Grün",
+        "colors.yellow": "Gelb",
+        "settings.title": "Einstellungen",
+        "settings.background": "🎨 Hintergrund",
+        "settings.bg.default": "Standard",
+        "settings.bg.ocean": "Ozean",
+        "settings.bg.sunset": "Sonnenuntergang",
+        "settings.bg.forest": "Wald",
+        "settings.bg.space": "Weltraum",
+        "settings.bg.gradient": "Farbverlauf",
+        "settings.close": "Fertig",
+        "language.auto": "Auto (Browser)"
     },
     en: {
-        game: {
-            title: "UNO",
-            currentColor: "Current Color:",
-            yourTurn: "Your Turn",
-            drawCard: "Draw Card",
-            uno: "UNO!",
-            chooseColor: "Choose Color:",
-            playAgain: "Play Again"
-        },
-        start: {
-            playerCount: "Number of Computer Opponents:",
-            players2: "You + 1 Computer",
-            players3: "You + 2 Computers",
-            players4: "You + 3 Computers",
-            difficulty: "Choose Difficulty:",
-            rules: "Rules",
-            startGame: "Start Game"
-        },
-        difficulty: {
-            easy: "Easy",
-            easyDesc: "Defensive Computer",
-            medium: "Medium",
-            mediumDesc: "Balanced Computer",
-            hard: "Hard",
-            hardDesc: "Strategic Computer"
-        },
-        settings: {
-            title: "Settings",
-            background: "🎨 Background",
-            cardTheme: "🎮 Card Theme",
-            bg: {
-                default: "Default",
-                ocean: "Ocean",
-                sunset: "Sunset",
-                forest: "Forest",
-                space: "Space",
-                gradient: "Gradient"
-            },
-            theme: {
-                classic: "Classic",
-                minecraft: "Minecraft",
-                mario: "Mario",
-                pokemon: "Pokemon",
-                cyberpunk: "Cyberpunk",
-                retro: "Retro"
-            },
-            close: "Done",
-            version: "Version 1.0.0"
-        }
-    },
-    es: {
-        game: {
-            title: "UNO",
-            currentColor: "Color Actual:",
-            yourTurn: "Tu Turno",
-            drawCard: "Robar Carta",
-            uno: "¡UNO!",
-            chooseColor: "Elegir Color:",
-            playAgain: "Jugar de Nuevo"
-        },
-        start: {
-            playerCount: "Número de Oponentes Informáticos:",
-            players2: "Tú + 1 Computadora",
-            players3: "Tú + 2 Computadoras",
-            players4: "Tú + 3 Computadoras",
-            difficulty: "Elegir Dificultad:",
-            rules: "Reglas",
-            startGame: "Iniciar Juego"
-        },
-        difficulty: {
-            easy: "Fácil",
-            easyDesc: "Computadora Defensiva",
-            medium: "Medio",
-            mediumDesc: "Computadora Equilibrada",
-            hard: "Difícil",
-            hardDesc: "Computadora Estratégica"
-        },
-        settings: {
-            title: "Configuración",
-            background: "🎨 Fondo",
-            cardTheme: "🎮 Tema de Cartas",
-            bg: {
-                default: "Predeterminado",
-                ocean: "Océano",
-                sunset: "Atardecer",
-                forest: "Bosque",
-                space: "Espacio",
-                gradient: "Degradado"
-            },
-            theme: {
-                classic: "Clásico",
-                minecraft: "Minecraft",
-                mario: "Mario",
-                pokemon: "Pokemon",
-                cyberpunk: "Cyberpunk",
-                retro: "Retro"
-            },
-            close: "Hecho",
-            version: "Versión 1.0.0"
-        }
-    },
-    fr: {
-        game: {
-            title: "UNO",
-            currentColor: "Couleur Actuelle:",
-            yourTurn: "Votre Tour",
-            drawCard: "Piocher une Carte",
-            uno: "UNO!",
-            chooseColor: "Choisir la Couleur:",
-            playAgain: "Rejouer"
-        },
-        start: {
-            playerCount: "Nombre d'Adversaires Informatiques:",
-            players2: "Vous + 1 Ordinateur",
-            players3: "Vous + 2 Ordinateurs",
-            players4: "Vous + 3 Ordinateurs",
-            difficulty: "Choisir la Difficulté:",
-            rules: "Règles",
-            startGame: "Commencer le Jeu"
-        },
-        difficulty: {
-            easy: "Facile",
-            easyDesc: "Ordinateur Défensif",
-            medium: "Moyen",
-            mediumDesc: "Ordinateur Équilibré",
-            hard: "Difficile",
-            hardDesc: "Ordinateur Stratégique"
-        },
-        settings: {
-            title: "Paramètres",
-            background: "🎨 Arrière-plan",
-            cardTheme: "🎮 Thème de Cartes",
-            bg: {
-                default: "Par Défaut",
-                ocean: "Océan",
-                sunset: "Coucher de Soleil",
-                forest: "Forêt",
-                space: "Espace",
-                gradient: "Dégradé"
-            },
-            theme: {
-                classic: "Classique",
-                minecraft: "Minecraft",
-                mario: "Mario",
-                pokemon: "Pokemon",
-                cyberpunk: "Cyberpunk",
-                retro: "Rétro"
-            },
-            close: "Terminé",
-            version: "Version 1.0.0"
-        }
-    },
-    pt: {
-        game: {
-            title: "UNO",
-            currentColor: "Cor Atual:",
-            yourTurn: "Sua Vez",
-            drawCard: "Comprar Carta",
-            uno: "UNO!",
-            chooseColor: "Escolher Cor:",
-            playAgain: "Jogar Novamente"
-        },
-        start: {
-            playerCount: "Número de Oponentes Informáticos:",
-            players2: "Você + 1 Computador",
-            players3: "Você + 2 Computadores",
-            players4: "Você + 3 Computadores",
-            difficulty: "Escolher Dificuldade:",
-            rules: "Regras",
-            startGame: "Iniciar Jogo"
-        },
-        difficulty: {
-            easy: "Fácil",
-            easyDesc: "Computador Defensivo",
-            medium: "Médio",
-            mediumDesc: "Computador Equilibrado",
-            hard: "Difícil",
-            hardDesc: "Computador Estratégico"
-        },
-        settings: {
-            title: "Configurações",
-            background: "🎨 Fundo",
-            cardTheme: "🎮 Tema de Cartas",
-            bg: {
-                default: "Padrão",
-                ocean: "Oceano",
-                sunset: "Pôr do Sol",
-                forest: "Floresta",
-                space: "Espaço",
-                gradient: "Gradiente"
-            },
-            theme: {
-                classic: "Clássico",
-                minecraft: "Minecraft",
-                mario: "Mario",
-                pokemon: "Pokemon",
-                cyberpunk: "Cyberpunk",
-                retro: "Retrô"
-            },
-            close: "Concluído",
-            version: "Versão 1.0.0"
-        }
-    },
-    ja: {
-        game: {
-            title: "UNO",
-            currentColor: "現在の色:",
-            yourTurn: "あなたの番",
-            drawCard: "カードを引く",
-            uno: "UNO!",
-            chooseColor: "色を選択:",
-            playAgain: "もう一度プレイ"
-        },
-        start: {
-            playerCount: "コンピューター対戦相手の数:",
-            players2: "あなた + 1台のコンピューター",
-            players3: "あなた + 2台のコンピューター",
-            players4: "あなた + 3台のコンピューター",
-            difficulty: "難易度を選択:",
-            rules: "ルール",
-            startGame: "ゲーム開始"
-        },
-        difficulty: {
-            easy: "簡単",
-            easyDesc: "防御的なコンピューター",
-            medium: "普通",
-            mediumDesc: "バランスの取れたコンピューター",
-            hard: "難しい",
-            hardDesc: "戦略的なコンピューター"
-        },
-        settings: {
-            title: "設定",
-            background: "🎨 背景",
-            cardTheme: "🎮 カードテーマ",
-            bg: {
-                default: "デフォルト",
-                ocean: "海",
-                sunset: "夕日",
-                forest: "森",
-                space: "宇宙",
-                gradient: "グラデーション"
-            },
-            theme: {
-                classic: "クラシック",
-                minecraft: "マインクラフト",
-                mario: "マリオ",
-                pokemon: "ポケモン",
-                cyberpunk: "サイバーパンク",
-                retro: "レトロ"
-            },
-            close: "完了",
-            version: "バージョン 1.0.0"
-        }
+        "game.title": "UNO",
+        "start.playerCount": "Number of Computer Opponents:",
+        "start.players2": "You + 1 Computer",
+        "start.players3": "You + 2 Computers",
+        "start.players4": "You + 3 Computers", 
+        "start.difficulty": "Choose Difficulty:",
+        "difficulty.easy": "Easy",
+        "difficulty.easyDesc": "Defensive Computer",
+        "difficulty.medium": "Medium",
+        "difficulty.mediumDesc": "Balanced Computer",
+        "difficulty.hard": "Hard",
+        "difficulty.hardDesc": "Strategic Computer",
+        "start.rules": "Game Rules",
+        "start.startGame": "Start Game",
+        "game.yourTurn": "Your Turn",
+        "game.computerTurn": "Computer {0}'s Turn",
+        "game.drawCard": "Draw Card",
+        "game.uno": "UNO!",
+        "game.currentColor": "Current Color:",
+        "game.cards": "Cards",
+        "game.chooseColor": "Choose Color:",
+        "game.computerChooses": "Computer chooses: {0}",
+        "game.unoCalled": "UNO called!",
+        "game.computerCallsUno": "Computer {0} calls UNO!",
+        "game.unoForgotten": "UNO forgotten! +2 Cards",
+        "game.won": "You Won! 🎉",
+        "game.lost": "You Lost 😔",
+        "game.wonText": "Congratulations! You won the game!",
+        "game.lostText": "Computer {0} won. Try again!",
+        "game.playAgain": "Play Again",
+        "game.restart": "Do you really want to restart the game?",
+        "game.empty": "Empty",
+        "colors.red": "Red",
+        "colors.blue": "Blue",
+        "colors.green": "Green", 
+        "colors.yellow": "Yellow",
+        "settings.title": "Settings",
+        "settings.background": "🎨 Background",
+        "settings.bg.default": "Default",
+        "settings.bg.ocean": "Ocean",
+        "settings.bg.sunset": "Sunset",
+        "settings.bg.forest": "Forest",
+        "settings.bg.space": "Space",
+        "settings.bg.gradient": "Gradient",
+        "settings.close": "Done",
+        "language.auto": "Auto (Browser)"
     },
     hu: {
-        game: {
-            title: "UNO",
-            currentColor: "Jelenlegi Szín:",
-            yourTurn: "Te Vagy",
-            drawCard: "Kártya Húzása",
-            uno: "UNO!",
-            chooseColor: "Szín Választása:",
-            playAgain: "Újra Játszás"
-        },
-        start: {
-            playerCount: "Számítógépes Ellenfelek Száma:",
-            players2: "Te + 1 Számítógép",
-            players3: "Te + 2 Számítógép",
-            players4: "Te + 3 Számítógép",
-            difficulty: "Nehézség Választása:",
-            rules: "Szabályok",
-            startGame: "Játék Indítása"
-        },
-        difficulty: {
-            easy: "Könnyű",
-            easyDesc: "Védekező Számítógép",
-            medium: "Közepes",
-            mediumDesc: "Kiegyensúlyozott Számítógép",
-            hard: "Nehéz",
-            hardDesc: "Stratégiai Számítógép"
-        },
-        settings: {
-            title: "Beállítások",
-            background: "🎨 Háttér",
-            cardTheme: "🎮 Kártya Téma",
-            bg: {
-                default: "Alapértelmezett",
-                ocean: "Óceán",
-                sunset: "Naplemente",
-                forest: "Erdő",
-                space: "Űr",
-                gradient: "Átmenet"
-            },
-            theme: {
-                classic: "Klasszikus",
-                minecraft: "Minecraft",
-                mario: "Mario",
-                pokemon: "Pokemon",
-                cyberpunk: "Cyberpunk",
-                retro: "Retro"
-            },
-            close: "Kész",
-            version: "Verzió 1.0.0"
-        }
+        "game.title": "UNO",
+        "start.playerCount": "Számítógépes ellenfelek száma:",
+        "start.players2": "Te + 1 Számítógép",
+        "start.players3": "Te + 2 Számítógép",
+        "start.players4": "Te + 3 Számítógép",
+        "start.difficulty": "Nehézségi szint:",
+        "difficulty.easy": "Könnyű",
+        "difficulty.easyDesc": "Defenzív számítógép",
+        "difficulty.medium": "Közepes",
+        "difficulty.mediumDesc": "Kiegyensúlyozott számítógép",
+        "difficulty.hard": "Nehéz",
+        "difficulty.hardDesc": "Stratégiai számítógép",
+        "start.rules": "Játékszabályok",
+        "start.startGame": "Játék indítása",
+        "game.yourTurn": "Te következel",
+        "game.computerTurn": "{0}. számítógép következik",
+        "game.drawCard": "Kártya húzása",
+        "game.uno": "UNO!",
+        "game.currentColor": "Jelenlegi szín:",
+        "game.cards": "Kártyák",
+        "game.chooseColor": "Szín választása:",
+        "game.computerChooses": "A számítógép választ: {0}",
+        "game.unoCalled": "UNO mondva!",
+        "game.computerCallsUno": "{0}. számítógép UNO-t mond!",
+        "game.unoForgotten": "UNO elfelejtve! +2 Kártya",
+        "game.won": "Nyertél! 🎉",
+        "game.lost": "Vesztettél 😔",
+        "game.wonText": "Gratulálok! Megnyerted a játékot!",
+        "game.lostText": "{0}. számítógép nyert. Próbáld újra!",
+        "game.playAgain": "Újra játék",
+        "game.restart": "Biztosan újra szeretnéd indítani a játékot?",
+        "game.empty": "Üres",
+        "colors.red": "Piros",
+        "colors.blue": "Kék",
+        "colors.green": "Zöld",
+        "colors.yellow": "Sárga",
+        "settings.title": "Beállítások",
+        "settings.background": "🎨 Háttér",
+        "settings.bg.default": "Alapértelmezett",
+        "settings.bg.ocean": "Óceán",
+        "settings.bg.sunset": "Naplemente",
+        "settings.bg.forest": "Erdő",
+        "settings.bg.space": "Világűr",
+        "settings.bg.gradient": "Színátmenet",
+        "settings.close": "Kész",
+        "language.auto": "Auto (Böngésző)"
     },
     ru: {
-        game: {
-            title: "UNO",
-            currentColor: "Текущий Цвет:",
-            yourTurn: "Ваш Ход",
-            drawCard: "Взять Карту",
-            uno: "УНО!",
-            chooseColor: "Выбрать Цвет:",
-            playAgain: "Играть Снова"
-        },
-        start: {
-            playerCount: "Количество Компьютерных Противников:",
-            players2: "Вы + 1 Компьютер",
-            players3: "Вы + 2 Компьютера",
-            players4: "Вы + 3 Компьютера",
-            difficulty: "Выбрать Сложность:",
-            rules: "Правила",
-            startGame: "Начать Игру"
-        },
-        difficulty: {
-            easy: "Легко",
-            easyDesc: "Защитный Компьютер",
-            medium: "Средне",
-            mediumDesc: "Сбалансированный Компьютер",
-            hard: "Сложно",
-            hardDesc: "Стратегический Компьютер"
-        },
-        settings: {
-            title: "Настройки",
-            background: "🎨 Фон",
-            cardTheme: "🎮 Тема Карт",
-            bg: {
-                default: "По Умолчанию",
-                ocean: "Океан",
-                sunset: "Закат",
-                forest: "Лес",
-                space: "Космос",
-                gradient: "Градиент"
-            },
-            theme: {
-                classic: "Классическая",
-                minecraft: "Майнкрафт",
-                mario: "Марио",
-                pokemon: "Покемон",
-                cyberpunk: "Киберпанк",
-                retro: "Ретро"
-            },
-            close: "Готово",
-            version: "Версия 1.0.0"
-        }
+        "game.title": "УНО",
+        "start.playerCount": "Количество компьютерных противников:",
+        "start.players2": "Ты + 1 Компьютер",
+        "start.players3": "Ты + 2 Компьютера",
+        "start.players4": "Ты + 3 Компьютера",
+        "start.difficulty": "Выберите сложность:",
+        "difficulty.easy": "Легко",
+        "difficulty.easyDesc": "Оборонительный компьютер",
+        "difficulty.medium": "Средне",
+        "difficulty.mediumDesc": "Сбалансированный компьютер",
+        "difficulty.hard": "Сложно",
+        "difficulty.hardDesc": "Стратегический компьютер",
+        "start.rules": "Правила игры",
+        "start.startGame": "Начать игру",
+        "game.yourTurn": "Ваш ход",
+        "game.computerTurn": "Ход компьютера {0}",
+        "game.drawCard": "Взять карту",
+        "game.uno": "УНО!",
+        "game.currentColor": "Текущий цвет:",
+        "game.cards": "Карты",
+        "game.chooseColor": "Выберите цвет:",
+        "game.computerChooses": "Компьютер выбирает: {0}",
+        "game.unoCalled": "УНО объявлено!",
+        "game.computerCallsUno": "Компьютер {0} объявляет УНО!",
+        "game.unoForgotten": "УНО забыто! +2 Карты",
+        "game.won": "Вы выиграли! 🎉",
+        "game.lost": "Вы проиграли 😔",
+        "game.wonText": "Поздравляем! Вы выиграли игру!",
+        "game.lostText": "Компьютер {0} выиграл. Попробуйте снова!",
+        "game.playAgain": "Играть снова",
+        "game.restart": "Вы действительно хотите перезапустить игру?",
+        "game.empty": "Пусто",
+        "colors.red": "Красный",
+        "colors.blue": "Синий",
+        "colors.green": "Зелёный",
+        "colors.yellow": "Жёлтый",
+        "settings.title": "Настройки",
+        "settings.background": "🎨 Фон",
+        "settings.bg.default": "По умолчанию",
+        "settings.bg.ocean": "Океан",
+        "settings.bg.sunset": "Закат",
+        "settings.bg.forest": "Лес",
+        "settings.bg.space": "Космос",
+        "settings.bg.gradient": "Градиент",
+        "settings.close": "Готово",
+        "language.auto": "Авто (Браузер)"
+    },
+    es: {
+        "game.title": "UNO",
+        "start.playerCount": "Número de oponentes computadora:",
+        "start.players2": "Tú + 1 Computadora",
+        "start.players3": "Tú + 2 Computadoras",
+        "start.players4": "Tú + 3 Computadoras",
+        "start.difficulty": "Elegir dificultad:",
+        "difficulty.easy": "Fácil",
+        "difficulty.easyDesc": "Computadora defensiva",
+        "difficulty.medium": "Medio",
+        "difficulty.mediumDesc": "Computadora equilibrada",
+        "difficulty.hard": "Difícil",
+        "difficulty.hardDesc": "Computadora estratégica",
+        "start.rules": "Reglas del juego",
+        "start.startGame": "Empezar juego",
+        "game.yourTurn": "Tu turno",
+        "game.computerTurn": "Turno de {0}",
+        "game.drawCard": "Robar carta",
+        "game.uno": "¡UNO!",
+        "game.currentColor": "Color actual:",
+        "game.cards": "Cartas",
+        "game.chooseColor": "Elegir color:",
+        "game.computerChooses": "La computadora elige: {0}",
+        "game.unoCalled": "¡UNO gritado!",
+        "game.computerCallsUno": "¡{0} grita UNO!",
+        "game.unoForgotten": "¡UNO olvidado! +2 Cartas",
+        "game.won": "¡Ganaste! 🎉",
+        "game.lost": "Perdiste 😔",
+        "game.wonText": "¡Felicidades! ¡Ganaste el juego!",
+        "game.lostText": "{0} ganó. ¡Inténtalo de nuevo!",
+        "game.playAgain": "Jugar de nuevo",
+        "game.restart": "¿Realmente quieres reiniciar el juego?",
+        "game.empty": "Vacío",
+        "colors.red": "Rojo",
+        "colors.blue": "Azul",
+        "colors.green": "Verde",
+        "colors.yellow": "Amarillo",
+        "settings.title": "Configuración",
+        "settings.background": "🎨 Fondo",
+        "settings.bg.default": "Por defecto",
+        "settings.bg.ocean": "Océano",
+        "settings.bg.sunset": "Atardecer",
+        "settings.bg.forest": "Bosque",
+        "settings.bg.space": "Espacio",
+        "settings.bg.gradient": "Gradiente",
+        "settings.close": "Listo",
+        "language.auto": "Auto (Navegador)"
+    },
+    fr: {
+        "game.title": "UNO",
+        "start.playerCount": "Nombre d'adversaires ordinateur:",
+        "start.players2": "Toi + 1 Ordinateur",
+        "start.players3": "Toi + 2 Ordinateurs",
+        "start.players4": "Toi + 3 Ordinateurs",
+        "start.difficulty": "Choisir la difficulté:",
+        "difficulty.easy": "Facile",
+        "difficulty.easyDesc": "Ordinateur défensif",
+        "difficulty.medium": "Moyen",
+        "difficulty.mediumDesc": "Ordinateur équilibré",
+        "difficulty.hard": "Difficile",
+        "difficulty.hardDesc": "Ordinateur stratégique",
+        "start.rules": "Règles du jeu",
+        "start.startGame": "Commencer le jeu",
+        "game.yourTurn": "Votre tour",
+        "game.computerTurn": "Tour de {0}",
+        "game.drawCard": "Piocher une carte",
+        "game.uno": "UNO!",
+        "game.currentColor": "Couleur actuelle:",
+        "game.cards": "Cartes",
+        "game.chooseColor": "Choisir la couleur:",
+        "game.computerChooses": "L'ordinateur choisit: {0}",
+        "game.unoCalled": "UNO annoncé!",
+        "game.computerCallsUno": "{0} annonce UNO!",
+        "game.unoForgotten": "UNO oublié! +2 Cartes",
+        "game.won": "Vous avez gagné! 🎉",
+        "game.lost": "Vous avez perdu 😔",
+        "game.wonText": "Félicitations! Vous avez gagné le jeu!",
+        "game.lostText": "{0} a gagné. Essayez encore!",
+        "game.playAgain": "Rejouer",
+        "game.restart": "Voulez-vous vraiment redémarrer le jeu?",
+        "game.empty": "Vide",
+        "colors.red": "Rouge",
+        "colors.blue": "Bleu",
+        "colors.green": "Vert",
+        "colors.yellow": "Jaune",
+        "settings.title": "Paramètres",
+        "settings.background": "🎨 Arrière-plan",
+        "settings.bg.default": "Par défaut",
+        "settings.bg.ocean": "Océan",
+        "settings.bg.sunset": "Coucher de soleil",
+        "settings.bg.forest": "Forêt",
+        "settings.bg.space": "Espace",
+        "settings.bg.gradient": "Dégradé",
+        "settings.close": "Terminé",
+        "language.auto": "Auto (Navigateur)"
+    },
+    pt: {
+        "game.title": "UNO",
+        "start.playerCount": "Número de oponentes computador:",
+        "start.players2": "Você + 1 Computador",
+        "start.players3": "Você + 2 Computadores",
+        "start.players4": "Você + 3 Computadores",
+        "start.difficulty": "Escolher dificuldade:",
+        "difficulty.easy": "Fácil",
+        "difficulty.easyDesc": "Computador defensivo",
+        "difficulty.medium": "Médio",
+        "difficulty.mediumDesc": "Computador equilibrado",
+        "difficulty.hard": "Difícil",
+        "difficulty.hardDesc": "Computador estratégico",
+        "start.rules": "Regras do jogo",
+        "start.startGame": "Começar jogo",
+        "game.yourTurn": "Sua vez",
+        "game.computerTurn": "Vez de {0}",
+        "game.drawCard": "Comprar carta",
+        "game.uno": "UNO!",
+        "game.currentColor": "Cor atual:",
+        "game.cards": "Cartas",
+        "game.chooseColor": "Escolher cor:",
+        "game.computerChooses": "O computador escolhe: {0}",
+        "game.unoCalled": "UNO gritado!",
+        "game.computerCallsUno": "{0} grita UNO!",
+        "game.unoForgotten": "UNO esquecido! +2 Cartas",
+        "game.won": "Você ganhou! 🎉",
+        "game.lost": "Você perdeu 😔",
+        "game.wonText": "Parabéns! Você ganhou o jogo!",
+        "game.lostText": "{0} ganhou. Tente novamente!",
+        "game.playAgain": "Jogar novamente",
+        "game.restart": "Você realmente quer reiniciar o jogo?",
+        "game.empty": "Vazio",
+        "colors.red": "Vermelho",
+        "colors.blue": "Azul",
+        "colors.green": "Verde",
+        "colors.yellow": "Amarelo",
+        "settings.title": "Configurações",
+        "settings.background": "🎨 Fundo",
+        "settings.bg.default": "Padrão",
+        "settings.bg.ocean": "Oceano",
+        "settings.bg.sunset": "Pôr do sol",
+        "settings.bg.forest": "Floresta",
+        "settings.bg.space": "Espaço",
+        "settings.bg.gradient": "Gradiente",
+        "settings.close": "Pronto",
+        "language.auto": "Auto (Navegador)"
+    },
+    ja: {
+        "game.title": "UNO",
+        "start.playerCount": "コンピューター対戦相手の数:",
+        "start.players2": "あなた + コンピューター1台",
+        "start.players3": "あなた + コンピューター2台",
+        "start.players4": "あなた + コンピューター3台",
+        "start.difficulty": "難易度を選択:",
+        "difficulty.easy": "簡単",
+        "difficulty.easyDesc": "守備的なコンピューター",
+        "difficulty.medium": "普通",
+        "difficulty.mediumDesc": "バランスの取れたコンピューター",
+        "difficulty.hard": "難しい",
+        "difficulty.hardDesc": "戦略的なコンピューター",
+        "start.rules": "ゲームルール",
+        "start.startGame": "ゲーム開始",
+        "game.yourTurn": "あなたの番",
+        "game.computerTurn": "{0}の番",
+        "game.drawCard": "カードを引く",
+        "game.uno": "ウノ!",
+        "game.currentColor": "現在の色:",
+        "game.cards": "枚",
+        "game.chooseColor": "色を選択:",
+        "game.computerChooses": "コンピューターが選択: {0}",
+        "game.unoCalled": "ウノ宣言!",
+        "game.computerCallsUno": "{0}がウノ宣言!",
+        "game.unoForgotten": "ウノ忘れ! +2枚",
+        "game.won": "勝利! 🎉",
+        "game.lost": "敗北 😔",
+        "game.wonText": "おめでとうございます！勝利しました！",
+        "game.lostText": "{0}が勝利しました。再挑戦してください！",
+        "game.playAgain": "もう一度",
+        "game.restart": "本当にゲームを再開始しますか？",
+        "game.empty": "空",
+        "colors.red": "赤",
+        "colors.blue": "青",
+        "colors.green": "緑",
+        "colors.yellow": "黄",
+        "settings.title": "設定",
+        "settings.background": "🎨 背景",
+        "settings.bg.default": "デフォルト",
+        "settings.bg.ocean": "海",
+        "settings.bg.sunset": "夕日",
+        "settings.bg.forest": "森",
+        "settings.bg.space": "宇宙",
+        "settings.bg.gradient": "グラデーション",
+        "settings.close": "完了",
+        "language.auto": "自動（ブラウザ）"
     },
     zh: {
-        game: {
-            title: "UNO",
-            currentColor: "当前颜色:",
-            yourTurn: "你的回合",
-            drawCard: "抽卡",
-            uno: "UNO!",
-            chooseColor: "选择颜色:",
-            playAgain: "再玩一次"
-        },
-        start: {
-            playerCount: "电脑对手数量:",
-            players2: "你 + 1个电脑",
-            players3: "你 + 2个电脑",
-            players4: "你 + 3个电脑",
-            difficulty: "选择难度:",
-            rules: "规则",
-            startGame: "开始游戏"
-        },
-        difficulty: {
-            easy: "简单",
-            easyDesc: "防御型电脑",
-            medium: "中等",
-            mediumDesc: "平衡型电脑",
-            hard: "困难",
-            hardDesc: "策略型电脑"
-        },
-        settings: {
-            title: "设置",
-            background: "🎨 背景",
-            cardTheme: "🎮 卡牌主题",
-            bg: {
-                default: "默认",
-                ocean: "海洋",
-                sunset: "日落",
-                forest: "森林",
-                space: "太空",
-                gradient: "渐变"
-            },
-            theme: {
-                classic: "经典",
-                minecraft: "我的世界",
-                mario: "马里奥",
-                pokemon: "宝可梦",
-                cyberpunk: "赛博朋克",
-                retro: "复古"
-            },
-            close: "完成",
-            version: "版本 1.0.0"
-        }
+        "game.title": "UNO",
+        "start.playerCount": "电脑对手数量:",
+        "start.players2": "你 + 1台电脑",
+        "start.players3": "你 + 2台电脑",
+        "start.players4": "你 + 3台电脑",
+        "start.difficulty": "选择难度:",
+        "difficulty.easy": "简单",
+        "difficulty.easyDesc": "防守型电脑",
+        "difficulty.medium": "中等",
+        "difficulty.mediumDesc": "平衡型电脑",
+        "difficulty.hard": "困难",
+        "difficulty.hardDesc": "策略型电脑",
+        "start.rules": "游戏规则",
+        "start.startGame": "开始游戏",
+        "game.yourTurn": "你的回合",
+        "game.computerTurn": "{0}的回合",
+        "game.drawCard": "抽牌",
+        "game.uno": "UNO!",
+        "game.currentColor": "当前颜色:",
+        "game.cards": "张牌",
+        "game.chooseColor": "选择颜色:",
+        "game.computerChooses": "电脑选择: {0}",
+        "game.unoCalled": "UNO宣告!",
+        "game.computerCallsUno": "{0}宣告UNO!",
+        "game.unoForgotten": "忘记UNO! +2张牌",
+        "game.won": "胜利! 🎉",
+        "game.lost": "失败 😔",
+        "game.wonText": "恭喜！你赢得了游戏！",
+        "game.lostText": "{0}获胜了。再试一次！",
+        "game.playAgain": "再玩一次",
+        "game.restart": "真的要重新开始游戏吗？",
+        "game.empty": "空",
+        "colors.red": "红色",
+        "colors.blue": "蓝色",
+        "colors.green": "绿色",
+        "colors.yellow": "黄色",
+        "settings.title": "设置",
+        "settings.background": "🎨 背景",
+        "settings.bg.default": "默认",
+        "settings.bg.ocean": "海洋",
+        "settings.bg.sunset": "日落",
+        "settings.bg.forest": "森林",
+        "settings.bg.space": "太空",
+        "settings.bg.gradient": "渐变",
+        "settings.close": "完成",
+        "language.auto": "自动（浏览器）"
     }
 };
-
-// Initialize language
-let currentLanguage = localStorage.getItem('unoLanguage') || 'de';
-
-// Function to translate text based on current language
-function t(key, ...args) {
-    const translation = translations[currentLanguage]?.[key] || translations['de'][key] || key;
-    return args.length > 0 ? formatString(translation, ...args) : translation;
-}
-
-function formatString(str, ...args) {
-    return str.replace(/\{(\d+)\}/g, (match, index) => args[index] || match);
-}
 
 // UNO Game Implementation
 class UnoGame {
@@ -589,18 +549,13 @@ class UnoGame {
         
         this.calledUno = []; // Track UNO calls for each player
         this.gameInProgress = false; // Prevent multiple simultaneous actions
-        this.currentLanguage = localStorage.getItem('unoLanguage') || 'de';
+        this.currentLanguage = localStorage.getItem('unoLanguage') || this.detectBrowserLanguage();
         this.currentBackground = localStorage.getItem('unoBackground') || 'default';
-        this.currentCardTheme = localStorage.getItem('unoCardTheme') || 'classic';
         
         this.initializeElements();
         this.setupEventListeners();
         this.initializeLanguage();
         this.initializeBackground();
-        this.initializeCardTheme();
-        
-        // Zeige eine Benachrichtigung über die automatisch erkannte Sprache beim ersten Laden
-        this.showLanguageDetectionNotification();
     }
     
     initializeElements() {
@@ -646,7 +601,6 @@ class UnoGame {
         this.settingsBtn = document.getElementById('settingsButton');
         this.settingsBtnGame = document.getElementById('settingsButtonGame');
         this.backgroundOptions = document.querySelectorAll('.background-option');
-        this.cardThemeOptions = document.querySelectorAll('.card-theme-option');
     }
     
     setupEventListeners() {
@@ -730,7 +684,12 @@ class UnoGame {
         
         this.languageOptions.forEach(option => {
             option.addEventListener('click', () => {
-                this.switchLanguage(option.dataset.lang);
+                const lang = option.dataset.lang;
+                if (lang === 'auto') {
+                    this.resetToAutoLanguage();
+                } else {
+                    this.switchLanguage(lang);
+                }
                 this.hideLanguageMenu();
             });
         });
@@ -761,13 +720,6 @@ class UnoGame {
         this.backgroundOptions.forEach(option => {
             option.addEventListener('click', () => {
                 this.changeBackground(option.dataset.bg);
-            });
-        });
-        
-        // Card theme selection
-        this.cardThemeOptions.forEach(option => {
-            option.addEventListener('click', () => {
-                this.changeCardTheme(option.dataset.theme);
             });
         });
         
@@ -977,8 +929,7 @@ class UnoGame {
                 computerCardsContainer.innerHTML = '';
                 this.players[i].forEach(() => {
                     const cardElement = document.createElement('div');
-                    cardElement.className = `computer-card ${this.currentCardTheme}-theme`;
-                    cardElement.innerHTML = this.createCardBackContent();
+                    cardElement.className = 'computer-card';
                     computerCardsContainer.appendChild(cardElement);
                 });
             }
@@ -998,8 +949,7 @@ class UnoGame {
         if (this.deck.length > 0) {
             // Show card back when cards are available
             const cardBack = document.createElement('div');
-            cardBack.className = `card-back ${this.currentCardTheme}-theme`;
-            cardBack.innerHTML = this.createCardBackContent();
+            cardBack.className = 'card-back';
             this.drawPileElement.appendChild(cardBack);
             
             // Enable draw button
@@ -1058,13 +1008,13 @@ class UnoGame {
     
     updateTurnDisplay() {
         if (this.currentPlayerIndex === 0) {
-            this.currentTurnElement.textContent = t('game.yourTurn');
+            this.currentTurnElement.textContent = this.t('game.yourTurn');
             this.currentTurnElement.style.background = 'rgba(76, 175, 80, 0.9)';
         } else {
             const computerName = this.computerPlayerNames && this.computerPlayerNames[this.currentPlayerIndex] 
                 ? this.computerPlayerNames[this.currentPlayerIndex] 
                 : `Computer ${this.currentPlayerIndex}`;
-            this.currentTurnElement.textContent = t('game.computerTurn', computerName);
+            this.currentTurnElement.textContent = this.t('game.computerTurn', computerName);
             this.currentTurnElement.style.background = 'rgba(244, 67, 54, 0.9)';
         }
     }
@@ -1076,7 +1026,7 @@ class UnoGame {
     
     createCardElement(card, showFace = true) {
         const cardElement = document.createElement('div');
-        cardElement.className = `card ${card.color} ${this.currentCardTheme}-theme`;
+        cardElement.className = `card ${card.color}`;
         
         if (showFace) {
             if (card.type === 'number') {
@@ -1092,30 +1042,9 @@ class UnoGame {
                 const wildText = card.value === 'wild' ? 'WILD' : '+4';
                 cardElement.innerHTML = `<span class="card-value">${wildText}</span>`;
             }
-        } else {
-            // Rückseite der Karte mit Theme-spezifischem Design
-            cardElement.innerHTML = this.createCardBackContent();
         }
         
         return cardElement;
-    }
-    
-    createCardBackContent() {
-        switch (this.currentCardTheme) {
-            case 'minecraft':
-                return '<div class="card-back-minecraft"><span class="pickaxe">⛏️</span></div>';
-            case 'mario':
-                return '<div class="card-back-mario"><span class="mushroom">🍄</span></div>';
-            case 'pokemon':
-                return '<div class="card-back-pokemon"><span class="pokeball">⚫</span></div>';
-            case 'cyberpunk':
-                return '<div class="card-back-cyberpunk"><span class="skull">💀</span></div>';
-            case 'retro':
-                return '<div class="card-back-retro"><span class="alien">👾</span></div>';
-            case 'classic':
-            default:
-                return '<div class="card-back-classic"><span class="uno-text">UNO</span></div>';
-        }
     }
     
     canPlayCard(card) {
@@ -1361,7 +1290,7 @@ class UnoGame {
         if (regularCards.length > 0 && Math.random() < 0.7) {
             return regularCards[Math.floor(Math.random() * regularCards.length)];
         } else if (actionCards.length > 0 && Math.random() < 0.6) {
-            return actionCards[Math.floor(Math.random() * regularCards.length)];
+            return actionCards[Math.floor(Math.random() * actionCards.length)];
         } else if (wildCards.length > 0) {
             return wildCards[Math.floor(Math.random() * wildCards.length)];
         }
@@ -1504,7 +1433,7 @@ class UnoGame {
             this.callUnoBtn.disabled = true;
             
             // Show feedback
-            this.currentTurnElement.textContent = t('game.unoCalled');
+            this.currentTurnElement.textContent = this.t('game.unoCalled');
             setTimeout(() => {
                 this.updateTurnDisplay();
             }, 1500);
@@ -1513,7 +1442,7 @@ class UnoGame {
             const computerName = this.computerPlayerNames && this.computerPlayerNames[playerIndex] 
                 ? this.computerPlayerNames[playerIndex] 
                 : `Computer ${playerIndex}`;
-            this.currentTurnElement.textContent = t('game.computerCallsUno', computerName);
+            this.currentTurnElement.textContent = this.t('game.computerCallsUno', computerName);
             setTimeout(() => {
                 this.updateTurnDisplay();
             }, 1500);
@@ -1525,7 +1454,7 @@ class UnoGame {
         this.drawCards(playerIndex, 2);
         
         if (playerIndex === 0) {
-            this.currentTurnElement.textContent = t('game.penalized') + ' +2 Karten';
+            this.currentTurnElement.textContent = 'UNO vergessen! +2 Karten';
             setTimeout(() => {
                 this.updateTurnDisplay();
             }, 2000);
@@ -1539,16 +1468,16 @@ class UnoGame {
         const gameResultText = document.getElementById('gameResultText');
         
         if (winnerIndex === 0) {
-            gameResult.textContent = t('game.won');
+            gameResult.textContent = this.t('game.won');
             gameResult.style.color = '#4caf50';
-            gameResultText.textContent = t('game.wonText');
+            gameResultText.textContent = this.t('game.wonText');
         } else {
-            gameResult.textContent = t('game.lost');
+            gameResult.textContent = this.t('game.lost');
             gameResult.style.color = '#f44336';
             const computerName = this.computerPlayerNames && this.computerPlayerNames[winnerIndex] 
                 ? this.computerPlayerNames[winnerIndex] 
                 : `Computer ${winnerIndex}`;
-            gameResultText.textContent = t('game.lostText', computerName);
+            gameResultText.textContent = this.t('game.lostText', computerName);
         }
         
         this.gameOverModal.classList.remove('hidden');
@@ -1564,11 +1493,14 @@ class UnoGame {
     
     // Language System
     initializeLanguage() {
-        // Automatische Spracherkennung basierend auf Browsersprache
+        // Automatische Spracherkennung basierend auf der Browsersprache
         if (!localStorage.getItem('unoLanguage')) {
-            const detectedLanguage = this.detectBrowserLanguage();
-            this.currentLanguage = detectedLanguage;
-            localStorage.setItem('unoLanguage', detectedLanguage);
+            const browserLanguage = this.detectBrowserLanguage();
+            this.currentLanguage = browserLanguage;
+            localStorage.setItem('unoLanguage', browserLanguage);
+            
+            // Zeige Benachrichtigung über automatisch erkannte Sprache
+            this.showAutoLanguageNotification(browserLanguage);
         }
         
         this.updateLanguageDisplay();
@@ -1583,124 +1515,38 @@ class UnoGame {
         // Verfügbare Sprachen im Spiel
         const availableLanguages = ['de', 'en', 'es', 'fr', 'pt', 'ja', 'zh', 'hu', 'ru'];
         
-        // Direkte Übereinstimmung finden
+        // Wenn die Primärsprache verfügbar ist, verwende sie
         if (availableLanguages.includes(primaryLang)) {
             return primaryLang;
         }
         
-        // Sprachzuordnung für ähnliche Sprachen
-        const languageMapping = {
-            'en-us': 'en', 'en-gb': 'en', 'en-ca': 'en', 'en-au': 'en',
-            'es-mx': 'es', 'es-ar': 'es', 'es-cl': 'es', 'es-co': 'es',
-            'fr-ca': 'fr', 'fr-be': 'fr', 'fr-ch': 'fr', 'fr-lu': 'fr',
-            'pt-pt': 'pt', 'pt-ao': 'pt', 'pt-mo': 'pt',
-            'ja-jp': 'ja',
-            'zh-cn': 'zh', 'zh-tw': 'zh', 'zh-hk': 'zh', 'zh-sg': 'zh',
-            'hu-hu': 'hu',
-            'ru-ru': 'ru', 'ru-ua': 'ru', 'ru-kz': 'ru', 'ru-by': 'ru'
-        };
+        // Versuche, eine ähnliche Sprache zu finden (z.B. 'en-US' -> 'en', 'pt-BR' -> 'pt')
+        const similarLang = availableLanguages.find(lang => 
+            browserLang.toLowerCase().startsWith(lang)
+        );
         
-        // Vollständige Sprachcode-Übereinstimmung
-        if (languageMapping[browserLang.toLowerCase()]) {
-            return languageMapping[browserLang.toLowerCase()];
+        if (similarLang) {
+            return similarLang;
         }
         
         // Fallback auf Deutsch
         return 'de';
     }
     
-    showLanguageDetectionNotification() {
-        // Zeige nur beim ersten Laden eine Benachrichtigung über die erkannte Sprache
-        if (!localStorage.getItem('unoLanguageNotificationShown')) {
-            const languageNames = {
-                'de': 'Deutsch',
-                'en': 'English',
-                'es': 'Español',
-                'fr': 'Français',
-                'pt': 'Português',
-                'ja': '日本語',
-                'zh': '中文',
-                'hu': 'Magyar',
-                'ru': 'Русский'
-            };
-            
-            const detectedLangName = languageNames[this.currentLanguage] || 'Deutsch';
-            
-            // Erstelle eine temporäre Benachrichtigung
-            const notification = document.createElement('div');
-            notification.className = 'language-notification';
-            notification.innerHTML = `
-                <span>🌍 Sprache automatisch erkannt: ${detectedLangName}</span>
-                <button class="notification-close">✕</button>
-            `;
-            
-            // Styling für die Benachrichtigung
-            notification.style.cssText = `
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                background: rgba(0, 0, 0, 0.8);
-                color: white;
-                padding: 12px 16px;
-                border-radius: 8px;
-                font-size: 14px;
-                z-index: 10000;
-                display: flex;
-                align-items: center;
-                gap: 12px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-                animation: slideIn 0.3s ease-out;
-            `;
-            
-            // Schließen-Button Styling
-            const closeBtn = notification.querySelector('.notification-close');
-            closeBtn.style.cssText = `
-                background: none;
-                border: none;
-                color: white;
-                cursor: pointer;
-                font-size: 16px;
-                padding: 0;
-                margin: 0;
-            `;
-            
-            // Event Listener für den Schließen-Button
-            closeBtn.addEventListener('click', () => {
-                notification.remove();
-            });
-            
-            // Füge CSS-Animation hinzu
-            if (!document.querySelector('#language-notification-styles')) {
-                const style = document.createElement('style');
-                style.id = 'language-notification-styles';
-                style.textContent = `
-                    @keyframes slideIn {
-                        from {
-                            transform: translateX(100%);
-                            opacity: 0;
-                        }
-                        to {
-                            transform: translateX(0);
-                            opacity: 1;
-                        }
-                    }
-                `;
-                document.head.appendChild(style);
-            }
-            
-            // Füge die Benachrichtigung zum DOM hinzu
-            document.body.appendChild(notification);
-            
-            // Automatisch nach 5 Sekunden ausblenden
-            setTimeout(() => {
-                if (notification.parentNode) {
-                    notification.remove();
-                }
-            }, 5000);
-            
-            // Markiere als angezeigt
-            localStorage.setItem('unoLanguageNotificationShown', 'true');
+    resetToAutoLanguage() {
+        const autoLanguage = this.detectBrowserLanguage();
+        this.currentLanguage = autoLanguage;
+        localStorage.removeItem('unoLanguage'); // Entferne den gespeicherten Wert, damit Auto-Modus aktiv bleibt
+        this.updateLanguageDisplay();
+        this.updateAllTexts();
+        
+        // Wenn ein Spiel läuft, regeneriere die Computer-Namen in der neuen Sprache
+        if (this.gameInProgress && this.computerPlayerNames) {
+            this.regenerateComputerNames();
         }
+        
+        // Zeige Benachrichtigung
+        this.showLanguageChangeNotification('auto');
     }
     
     switchLanguage(lang) {
@@ -1713,6 +1559,116 @@ class UnoGame {
         if (this.gameInProgress && this.computerPlayerNames) {
             this.regenerateComputerNames();
         }
+        
+        // Zeige eine Benachrichtigung, dass die Sprache geändert wurde
+        this.showLanguageChangeNotification(lang);
+    }
+    
+    showLanguageChangeNotification(lang) {
+        // Erstelle eine temporäre Benachrichtigung
+        const notification = document.createElement('div');
+        notification.className = 'language-notification';
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 10000;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        `;
+        
+        const languageNames = {
+            'de': 'Deutsch',
+            'en': 'English',
+            'es': 'Español',
+            'fr': 'Français',
+            'pt': 'Português',
+            'ja': '日本語',
+            'zh': '中文',
+            'hu': 'Magyar',
+            'ru': 'Русский'
+        };
+        
+        if (lang === 'auto') {
+            const autoLanguage = this.detectBrowserLanguage();
+            notification.textContent = `Sprache auf Auto gesetzt: ${languageNames[autoLanguage] || autoLanguage}`;
+        } else {
+            notification.textContent = `Sprache geändert zu: ${languageNames[lang] || lang}`;
+        }
+        document.body.appendChild(notification);
+        
+        // Animation einblenden
+        setTimeout(() => {
+            notification.style.transform = 'translateX(0)';
+        }, 100);
+        
+        // Nach 3 Sekunden ausblenden
+        setTimeout(() => {
+            notification.style.transform = 'translateX(100%)';
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.parentNode.removeChild(notification);
+                }
+            }, 300);
+        }, 3000);
+    }
+    
+    showAutoLanguageNotification(detectedLanguage) {
+        // Erstelle eine temporäre Benachrichtigung für automatisch erkannte Sprache
+        const notification = document.createElement('div');
+        notification.className = 'language-notification auto-detected';
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #2196F3;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 10000;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        `;
+        
+        const languageNames = {
+            'de': 'Deutsch',
+            'en': 'English',
+            'es': 'Español',
+            'fr': 'Français',
+            'pt': 'Português',
+            'ja': '日本語',
+            'zh': '中文',
+            'hu': 'Magyar',
+            'ru': 'Русский'
+        };
+        
+        notification.textContent = `🌐 Sprache automatisch erkannt: ${languageNames[detectedLanguage] || detectedLanguage}`;
+        document.body.appendChild(notification);
+        
+        // Animation einblenden
+        setTimeout(() => {
+            notification.style.transform = 'translateX(0)';
+        }, 100);
+        
+        // Nach 4 Sekunden ausblenden
+        setTimeout(() => {
+            notification.style.transform = 'translateX(100%)';
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.parentNode.removeChild(notification);
+                }
+            }, 300);
+        }, 4000);
     }
     
     regenerateComputerNames() {
@@ -1764,15 +1720,30 @@ class UnoGame {
         
         // Update active state in dropdown
         this.languageOptions.forEach(option => {
-            option.classList.toggle('active', option.dataset.lang === this.currentLanguage);
+            if (option.dataset.lang === 'auto') {
+                // Auto-Option ist aktiv, wenn keine Sprache im localStorage gespeichert ist
+                const isAutoActive = !localStorage.getItem('unoLanguage');
+                option.classList.toggle('active', isAutoActive);
+            } else {
+                option.classList.toggle('active', option.dataset.lang === this.currentLanguage);
+            }
         });
+    }
+    
+    t(key, ...args) {
+        const translation = translations[this.currentLanguage]?.[key] || translations['de'][key] || key;
+        return args.length > 0 ? this.formatString(translation, ...args) : translation;
+    }
+    
+    formatString(str, ...args) {
+        return str.replace(/\{(\d+)\}/g, (match, index) => args[index] || match);
     }
     
     updateAllTexts() {
         // Update all elements with data-i18n attribute
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
-            element.textContent = t(key);
+            element.textContent = this.t(key);
         });
         
         // Update dynamic texts if game is running
@@ -1812,41 +1783,6 @@ class UnoGame {
     updateBackgroundOptions() {
         this.backgroundOptions.forEach(option => {
             option.classList.toggle('active', option.dataset.bg === this.currentBackground);
-        });
-    }
-    
-    initializeCardTheme() {
-        this.applyCardTheme(this.currentCardTheme);
-        this.updateCardThemeOptions();
-    }
-    
-    changeCardTheme(themeName) {
-        this.currentCardTheme = themeName;
-        localStorage.setItem('unoCardTheme', themeName);
-        this.applyCardTheme(themeName);
-        this.updateCardThemeOptions();
-    }
-    
-    applyCardTheme(themeName) {
-        // Remove all existing theme classes from cards
-        const allCards = document.querySelectorAll('.card, .computer-card, .card-back');
-        allCards.forEach(card => {
-            card.classList.remove('classic-theme', 'minecraft-theme', 'mario-theme', 'pokemon-theme', 'cyberpunk-theme', 'retro-theme');
-            card.classList.add(themeName + '-theme');
-            
-            // Update card back content if it's a back side
-            if (card.classList.contains('computer-card') || card.classList.contains('card-back')) {
-                card.innerHTML = this.createCardBackContent();
-            }
-        });
-        
-        // Store current theme for new cards
-        document.body.setAttribute('data-card-theme', themeName);
-    }
-    
-    updateCardThemeOptions() {
-        this.cardThemeOptions.forEach(option => {
-            option.classList.toggle('active', option.dataset.theme === this.currentCardTheme);
         });
     }
 }
