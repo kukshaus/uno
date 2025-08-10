@@ -1304,6 +1304,8 @@ body.bg-gradient {
 .settings-modal-content {
     max-width: 500px;
     width: 95%;
+    max-height: 85vh;
+    overflow-y: auto;
 }
 
 .settings-content {
@@ -1699,6 +1701,12 @@ body.bg-gradient {
         padding: 1.5rem;
     }
     
+    .settings-modal-content {
+        max-height: 90vh;
+        width: 98%;
+        padding: 1.5rem;
+    }
+    
     .card-type {
         flex-direction: column;
         text-align: center;
@@ -1718,6 +1726,21 @@ body.bg-gradient {
         padding: 1.5rem 1rem;
         margin: 0.5rem;
         width: calc(100% - 1rem);
+    }
+    
+    .settings-modal-content {
+        max-height: 95vh;
+        width: 98%;
+        padding: 1rem;
+    }
+    
+    .settings-section {
+        margin-bottom: 1rem;
+    }
+    
+    .settings-section h3 {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
     }
     
     .top-controls {
